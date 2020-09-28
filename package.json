@@ -4,8 +4,8 @@
   "description": "Um blog simples em Node.js",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js",
+    "lint": "eslint ./src/** app.js database.js rotas.js server.js"
   },
   "license": "ISC",
   "dependencies": {
@@ -16,11 +16,19 @@
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.26.0",
     "nodemailer": "^6.4.8",
-    "nodemon": "^2.0.2",
     "passport": "^0.4.1",
     "passport-http-bearer": "^1.0.1",
     "passport-local": "^1.0.0",
     "redis": "^3.0.2",
     "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "eslint": "^7.10.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
