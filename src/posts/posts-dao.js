@@ -19,17 +19,17 @@ module.exports = {
     }
   },
 
-  async listaPorAutor (idAutor) {
+  async listar (idAutor) {
     try {
-      return await dbAll('SELECT id, titulo FROM posts WHERE autor = ?', [idAutor])
-    } catch (erro) {
-      throw new InternalServerError('Erro ao listar os posts!')
-    }
-  },
+      let instrucoes = 'SELECT id, titulo FROM posts'
+      const params = []
 
-  async listaTodos () {
-    try {
-      return await dbAll('SELECT id, titulo FROM posts')
+      if (idAutor) {
+        instrucoes = `${instrucoes} WHERE autor = ?`
+        params.push(idAutor)
+      }
+
+      return await dbAll(instrucoes, params)
     } catch (erro) {
       throw new InternalServerError('Erro ao listar os posts!')
     }
@@ -37,7 +37,15 @@ module.exports = {
 
   async buscaPorId (id, idAutor) {
     try {
-      return await dbGet('SELECT * FROM posts WHERE id = ? AND autor = ?', [id, idAutor])
+      let instrucoes = 'SELECT * FROM posts WHERE id = ?'
+      const parametros = [id]
+
+      if (idAutor) {
+        instrucoes = `${instrucoes} AND autor = ?`
+        parametros.push(idAutor)
+      }
+
+      return await dbGet(instrucoes, parametros)
     } catch (erro) {
       throw new InternalServerError('Não foi possível encontrar o post!')
     }

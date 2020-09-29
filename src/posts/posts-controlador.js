@@ -35,7 +35,14 @@ module.exports = {
 
   async obterDetalhes (req, res) {
     try {
-      const post = await Post.buscaPorId(req.params.id, req.user.id)
+      let post
+
+      if (req.user.cargo === 'admin') {
+        post = await Post.buscaPorId(req.params.id)
+      } else {
+        post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
+      }
+
       res.json(post)
     } catch (erro) {
       return res.status(500).json({ erro: erro.message })
@@ -44,7 +51,19 @@ module.exports = {
 
   async remover (req, res) {
     try {
-      const post = await Post.buscaPorId(req.params.id, req.user.id)
+      let post
+
+      if (req.user.cargo === 'admin') {
+        post = await Post.buscaPorId(req.params.id)
+      } else {
+        post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
+      }
+
+      if (post === null) {
+        res.status(404)
+        res.end()
+      }
+
       post.remover()
       res.status(204)
       res.end()

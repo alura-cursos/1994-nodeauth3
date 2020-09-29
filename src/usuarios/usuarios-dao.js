@@ -10,12 +10,13 @@ module.exports = {
   async adiciona (usuario) {
     try {
       await dbRun(
-        `INSERT INTO usuarios (nome, email, senhaHash, emailVerificado) 
-        VALUES (?, ?, ?, ?)`,
+        `INSERT INTO usuarios (nome, email, senhaHash, cargo, emailVerificado) 
+        VALUES (?, ?, ?, ?, ?)`,
         [
           usuario.nome,
           usuario.email,
           usuario.senhaHash,
+          usuario.cargo,
           usuario.emailVerificado
         ]
       )
