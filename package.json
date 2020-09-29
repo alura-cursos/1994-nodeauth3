@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "lint": "eslint ./src/** app.js database.js rotas.js server.js"
+    "lint": "eslint ./src/** app.js database.js rotas.js server.js",
+    "esdoc": "./node_modules/.bin/esdoc"
   },
   "license": "ISC",
   "dependencies": {
@@ -24,6 +25,10 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2",
+    "esdoc": "^1.1.0",
+    "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+    "esdoc-inject-style-plugin": "^1.0.0",
+    "esdoc-standard-plugin": "^1.0.0",
     "eslint": "^7.10.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.1",
