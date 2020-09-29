@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/cargos/Admin.js",
-    "content": "const { entidades, acoes, cargos } = require('./permissoes')\nconst Cargo = require('./Cargo')\n\n/**\n * Admin - definição das permissões de cada entidade para o Admin\n *\n * @implements {Cargo}\n */\nclass Admin extends Cargo {\n  /**\n   * constructor\n   */\n  constructor () {\n    super()\n    /**\n     * @type {string} [cargo='admin'] - tem o cargo de administrador\n     */\n    this.cargo = cargos.ADMIN\n\n    /**\n     * @type {string[]} USUARIOS=['ler', 'escrever', 'atualizar', 'remover'] - tem as permissões de ler, escrever, atualizar e remover usuários\n     */\n    this[entidades.USUARIOS] = [\n      acoes.LER,\n      acoes.ESCREVER,\n      acoes.ATUALIZAR,\n      acoes.REMOVER\n    ]\n\n    /**\n     * @type {string['ler', 'escrever', 'atualizar', 'remover']} POSTS - tem as permissões de ler, escrever, atualizar e remover posts\n     */\n    this[entidades.POSTS] = [\n      acoes.LER,\n      acoes.ESCREVER,\n      acoes.ATUALIZAR,\n      acoes.REMOVER\n    ]\n  }\n}\n\nmodule.exports = Admin\n",
+    "content": "const { entidades, acoes, cargos } = require('./permissoes')\nconst Cargo = require('./Cargo')\n\n/**\n * Admin - definição das permissões de cada entidade para o Admin\n *\n * @implements {Cargo}\n */\nclass Admin extends Cargo {\n  /**\n   * constructor\n   */\n  constructor () {\n    super()\n    /**\n     * @type {string} cargo - tem o cargo de administrador\n     */\n    this.cargo = cargos.ADMIN\n\n    /**\n     * @type {string[]} USUARIOS - tem as permissões de ler, escrever, atualizar e remover usuários\n     */\n    this[entidades.USUARIOS] = [\n      acoes.LER,\n      acoes.ESCREVER,\n      acoes.ATUALIZAR,\n      acoes.REMOVER\n    ]\n\n    /**\n     * @type {string[]} POSTS - tem as permissões de ler, escrever, atualizar e remover posts\n     */\n    this[entidades.POSTS] = [\n      acoes.LER,\n      acoes.ESCREVER,\n      acoes.ATUALIZAR,\n      acoes.REMOVER\n    ]\n  }\n}\n\nmodule.exports = Admin\n",
     "static": true,
     "longname": "/home/onhernandes/code/blog-do-codigo-2/src/cargos/Admin.js",
     "access": "public",
@@ -701,7 +701,7 @@
     "type": {
       "nullable": null,
       "types": [
-        "string['ler', 'escrever', 'atualizar', 'remover']"
+        "string[]"
       ],
       "spread": false,
       "description": null
@@ -711,7 +711,7 @@
     "__docId__": 56,
     "kind": "file",
     "name": "src/cargos/Cargo.js",
-    "content": "const { entidades, cargos } = require('./permissoes')\n\n/**\n * Cargo - definição base dos cargos da aplicação\n *\n * @interface\n */\nclass Cargo {\n  /**\n   * constructor\n   */\n  constructor () {\n    /**\n     * @property {string} [cargo=LEITOR] - título do cargo\n     */\n    this.cargo = cargos.LEITOR\n\n    /**\n     * @property {string[]} USUARIOS - as possíveis permissões que o cargo pode ter em relação aos usuários\n     */\n    this[entidades.USUARIOS] = []\n\n    /**\n     * @property {string[]} POSTS - as possíveis permissões que o cargo pode ter em relação aos usuários\n     */\n    this[entidades.POSTS] = []\n  }\n}\n\nmodule.exports = Cargo\n",
+    "content": "const { entidades, cargos } = require('./permissoes')\n\n/**\n * Cargo - definição base dos cargos da aplicação\n *\n * @interface\n */\nclass Cargo {\n  /**\n   * constructor\n   */\n  constructor () {\n    /**\n     * @property {string} [cargo=LEITOR] - título do cargo\n     */\n    this.cargo = cargos.LEITOR\n\n    /**\n     * @property {string[]} USUARIOS - as possíveis permissões que o cargo pode ter em relação aos usuários\n     */\n    this[entidades.USUARIOS] = []\n\n    /**\n     * @property {string[]} POSTS - as possíveis permissões que o cargo pode ter em relação aos usuários\n     */\n    this[entidades.POSTS] = []\n  }\n\n  /**\n   * obterCargo - retorna o cargo definido\n   *\n   * @return {string} LEITOR - cargo padrão\n   */\n  obterCargo () {\n    return this.cargo\n  }\n\n  /**\n   * obterPermissoesUsuarios - retorna as permissões definidas para os usuários\n   *\n   * @return {string[]} [] - nenhuma permissão é dada por padrão\n   */\n  obterPermissoesUsuarios () {\n    return this[entidades.USUARIOS]\n  }\n\n  /**\n   * obterPermissoesPosts - retorna as permissões definidas para os posts\n   *\n   * @return {string[]} [] - nenhuma permissão é dada por padrão\n   */\n  obterPermissoesPosts () {\n    return this[entidades.POSTS]\n  }\n}\n\nmodule.exports = Cargo\n",
     "static": true,
     "longname": "/home/onhernandes/code/blog-do-codigo-2/src/cargos/Cargo.js",
     "access": "public",
@@ -855,6 +855,72 @@
   },
   {
     "__docId__": 63,
+    "kind": "method",
+    "name": "obterCargo",
+    "memberof": "src/cargos/Cargo.js~Cargo",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/cargos/Cargo.js~Cargo#obterCargo",
+    "access": "public",
+    "description": "obterCargo - retorna o cargo definido",
+    "lineNumber": 34,
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "LEITOR - cargo padrão"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "obterPermissoesUsuarios",
+    "memberof": "src/cargos/Cargo.js~Cargo",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/cargos/Cargo.js~Cargo#obterPermissoesUsuarios",
+    "access": "public",
+    "description": "obterPermissoesUsuarios - retorna as permissões definidas para os usuários",
+    "lineNumber": 43,
+    "return": {
+      "nullable": null,
+      "types": [
+        "string[]"
+      ],
+      "spread": false,
+      "description": "[] - nenhuma permissão é dada por padrão"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "obterPermissoesPosts",
+    "memberof": "src/cargos/Cargo.js~Cargo",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/cargos/Cargo.js~Cargo#obterPermissoesPosts",
+    "access": "public",
+    "description": "obterPermissoesPosts - retorna as permissões definidas para os posts",
+    "lineNumber": 52,
+    "return": {
+      "nullable": null,
+      "types": [
+        "string[]"
+      ],
+      "spread": false,
+      "description": "[] - nenhuma permissão é dada por padrão"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 66,
     "kind": "file",
     "name": "src/cargos/Editor.js",
     "content": "const { entidades, acoes, cargos } = require('./permissoes')\nconst Cargo = require('./Cargo')\n\n/**\n * Editor - definição das permissões de cada entidade para o Editor\n *\n * @implements {Cargo}\n */\nclass Editor extends Cargo {\n  /**\n   * constructor\n   */\n  constructor () {\n    super()\n    /**\n     * @property {string} cargo - tem o cargo de editor\n     */\n    this.cargo = cargos.EDITOR\n\n    /**\n     * @property {string[]} USUARIOS - não tem permissões sobre nenhuma ação com os usuários\n     */\n    this[entidades.USUARIOS] = []\n\n    /**\n     * @property {string[]} POSTS - tem as permissões de ler, escrever, atualizar e remover posts que foram criados por si mesmo\n     */\n    this[entidades.POSTS] = [\n      acoes.LER,\n      acoes.ESCREVER,\n      acoes.ATUALIZAR,\n      acoes.REMOVER\n    ]\n  }\n}\n\nmodule.exports = Editor\n",
@@ -865,7 +931,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 64,
+    "__docId__": 67,
     "kind": "variable",
     "name": "entidades",
     "memberof": "src/cargos/Editor.js",
@@ -886,7 +952,7 @@
     "ignore": true
   },
   {
-    "__docId__": 65,
+    "__docId__": 68,
     "kind": "variable",
     "name": "Cargo",
     "memberof": "src/cargos/Editor.js",
@@ -907,7 +973,7 @@
     "ignore": true
   },
   {
-    "__docId__": 66,
+    "__docId__": 69,
     "kind": "class",
     "name": "Editor",
     "memberof": "src/cargos/Editor.js",
@@ -928,7 +994,7 @@
     ]
   },
   {
-    "__docId__": 67,
+    "__docId__": 70,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/cargos/Editor.js~Editor",
@@ -941,7 +1007,7 @@
     "lineNumber": 13
   },
   {
-    "__docId__": 68,
+    "__docId__": 71,
     "kind": "member",
     "name": "cargo",
     "memberof": "src/cargos/Editor.js~Editor",
@@ -969,7 +1035,7 @@
     }
   },
   {
-    "__docId__": 69,
+    "__docId__": 72,
     "kind": "member",
     "name": "[entidades.USUARIOS]",
     "memberof": "src/cargos/Editor.js~Editor",
@@ -997,7 +1063,7 @@
     }
   },
   {
-    "__docId__": 70,
+    "__docId__": 73,
     "kind": "member",
     "name": "[entidades.POSTS]",
     "memberof": "src/cargos/Editor.js~Editor",
@@ -1025,7 +1091,7 @@
     }
   },
   {
-    "__docId__": 71,
+    "__docId__": 74,
     "kind": "file",
     "name": "src/cargos/Leitor.js",
     "content": "const { entidades, acoes, cargos } = require('./permissoes')\nconst Cargo = require('./Cargo')\n\n/**\n * Leitor - definição das permissões de cada entidade para o Leitor\n *\n * @implements {Cargo}\n */\nclass Leitor extends Cargo {\n  /**\n   * constructor\n   */\n  constructor () {\n    super()\n    /**\n     * @property {string} cargo - tem o cargo de editor\n     */\n    this.cargo = cargos.LEITOR\n\n    /**\n     * @property {string[]} USUARIOS - não tem permissões sobre nenhuma ação com os usuários\n     */\n    this[entidades.USUARIOS] = []\n\n    /**\n     * @property {string[]} POSTS - tem a permissão de ler todos os posts\n     */\n    this[entidades.POSTS] = [acoes.LER]\n  }\n}\n\nmodule.exports = Leitor\n",
@@ -1036,7 +1102,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 72,
+    "__docId__": 75,
     "kind": "variable",
     "name": "entidades",
     "memberof": "src/cargos/Leitor.js",
@@ -1057,7 +1123,7 @@
     "ignore": true
   },
   {
-    "__docId__": 73,
+    "__docId__": 76,
     "kind": "variable",
     "name": "Cargo",
     "memberof": "src/cargos/Leitor.js",
@@ -1078,7 +1144,7 @@
     "ignore": true
   },
   {
-    "__docId__": 74,
+    "__docId__": 77,
     "kind": "class",
     "name": "Leitor",
     "memberof": "src/cargos/Leitor.js",
@@ -1099,7 +1165,7 @@
     ]
   },
   {
-    "__docId__": 75,
+    "__docId__": 78,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/cargos/Leitor.js~Leitor",
@@ -1112,7 +1178,7 @@
     "lineNumber": 13
   },
   {
-    "__docId__": 76,
+    "__docId__": 79,
     "kind": "member",
     "name": "cargo",
     "memberof": "src/cargos/Leitor.js~Leitor",
@@ -1140,7 +1206,7 @@
     }
   },
   {
-    "__docId__": 77,
+    "__docId__": 80,
     "kind": "member",
     "name": "[entidades.USUARIOS]",
     "memberof": "src/cargos/Leitor.js~Leitor",
@@ -1168,7 +1234,7 @@
     }
   },
   {
-    "__docId__": 78,
+    "__docId__": 81,
     "kind": "member",
     "name": "[entidades.POSTS]",
     "memberof": "src/cargos/Leitor.js~Leitor",
@@ -1196,10 +1262,10 @@
     }
   },
   {
-    "__docId__": 79,
+    "__docId__": 82,
     "kind": "file",
     "name": "src/cargos/permissoes.js",
-    "content": "/**\n * acoes - definição de quais ações podem ser executadas sobre cada entidade\n *\n * @property {Object} acoes - todas as entidades da aplicação\n * @property {string} acoes.LER - ler, obter informações da entidade\n * @property {string} acoes.ESCREVER - criar, inserir novas informações na tabela\n * @property {string} acoes.ATUALIZAR - autalizar, mudar informações de um determinado documento\n * @property {string} acoes.REMOVER - remover, apagar um determinado documento da aplicação\n */\nconst acoes = {\n  LER: 'ler',\n  ESCREVER: 'escrever',\n  ATUALIZAR: 'atualizar',\n  REMOVER: 'remover'\n}\n\n/**\n * entidades - definição de quais entidades fazem parte da aplicação e do controle de acesso\n *\n * @property {Object} entidades - todas as entidades da aplicação\n * @property {string} entidades.USUARIOS - usuários\n * @property {string} entidades.POSTS - artigos/posts\n */\nconst entidades = {\n  USUARIOS: 'usuarios',\n  POSTS: 'posts'\n}\n\n/**\n * cargos - definição de quais cargos a aplicação possui\n *\n * @property {Object} cargos - todos os cargos disponíveis\n * @property {string} cargos.ADMIN - cargo de administrador\n * @property {string} cargos.EDITOR - cargo de editor de posts\n * @property {string} cargos.LEITOR - cargo de leitor de posts\n */\nconst cargos = {\n  ADMIN: 'admin',\n  EDITOR: 'editor',\n  LEITOR: 'leitor'\n}\n\nmodule.exports = {\n  acoes,\n  entidades,\n  cargos\n}\n",
+    "content": "/**\n * acoes - definição de quais ações podem ser executadas sobre cada entidade\n *\n * @property {Object} acoes - todas as entidades da aplicação\n * @property {Symbol} acoes.LER - ler, obter informações da entidade\n * @property {Symbol} acoes.ESCREVER - criar, inserir novas informações na tabela\n * @property {Symbol} acoes.ATUALIZAR - autalizar, mudar informações de um determinado documento\n * @property {Symbol} acoes.REMOVER - remover, apagar um determinado documento da aplicação\n */\nconst acoes = {\n  LER: Symbol('ler'),\n  ESCREVER: Symbol('escrever'),\n  ATUALIZAR: Symbol('atualizar'),\n  REMOVER: Symbol('remover')\n}\n\n/**\n * entidades - definição de quais entidades fazem parte da aplicação e do controle de acesso\n *\n * @property {Object} entidades - todas as entidades da aplicação\n * @property {Symbol} entidades.USUARIOS - usuários\n * @property {Symbol} entidades.POSTS - artigos/posts\n */\nconst entidades = {\n  USUARIOS: Symbol('usuarios'),\n  POSTS: Symbol('posts')\n}\n\n/**\n * cargos - definição de quais cargos a aplicação possui\n *\n * @property {Object} cargos - todos os cargos disponíveis\n * @property {Symbol} cargos.ADMIN - cargo de administrador\n * @property {Symbol} cargos.EDITOR - cargo de editor de posts\n * @property {Symbol} cargos.LEITOR - cargo de leitor de posts\n */\nconst cargos = {\n  ADMIN: Symbol('admin'),\n  EDITOR: Symbol('editor'),\n  LEITOR: Symbol('leitor')\n}\n\nmodule.exports = {\n  acoes,\n  entidades,\n  cargos\n}\n",
     "static": true,
     "longname": "/home/onhernandes/code/blog-do-codigo-2/src/cargos/permissoes.js",
     "access": "public",
@@ -1207,7 +1273,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 80,
+    "__docId__": 83,
     "kind": "variable",
     "name": "acoes",
     "memberof": "src/cargos/permissoes.js",
@@ -1233,7 +1299,7 @@
       {
         "nullable": null,
         "types": [
-          "string"
+          "Symbol"
         ],
         "spread": false,
         "optional": false,
@@ -1243,7 +1309,7 @@
       {
         "nullable": null,
         "types": [
-          "string"
+          "Symbol"
         ],
         "spread": false,
         "optional": false,
@@ -1253,7 +1319,7 @@
       {
         "nullable": null,
         "types": [
-          "string"
+          "Symbol"
         ],
         "spread": false,
         "optional": false,
@@ -1263,7 +1329,7 @@
       {
         "nullable": null,
         "types": [
-          "string"
+          "Symbol"
         ],
         "spread": false,
         "optional": false,
@@ -1273,12 +1339,12 @@
     ],
     "type": {
       "types": [
-        "{\"LER\": string, \"ESCREVER\": string, \"ATUALIZAR\": string, \"REMOVER\": string}"
+        "{\"LER\": *, \"ESCREVER\": *, \"ATUALIZAR\": *, \"REMOVER\": *}"
       ]
     }
   },
   {
-    "__docId__": 81,
+    "__docId__": 84,
     "kind": "variable",
     "name": "entidades",
     "memberof": "src/cargos/permissoes.js",
@@ -1293,13 +1359,13 @@
     "undocument": true,
     "type": {
       "types": [
-        "{\"USUARIOS\": string, \"POSTS\": string}"
+        "{\"USUARIOS\": *, \"POSTS\": *}"
       ]
     },
     "ignore": true
   },
   {
-    "__docId__": 82,
+    "__docId__": 85,
     "kind": "variable",
     "name": "cargos",
     "memberof": "src/cargos/permissoes.js",
@@ -1314,13 +1380,13 @@
     "undocument": true,
     "type": {
       "types": [
-        "{\"ADMIN\": string, \"EDITOR\": string, \"LEITOR\": string}"
+        "{\"ADMIN\": *, \"EDITOR\": *, \"LEITOR\": *}"
       ]
     },
     "ignore": true
   },
   {
-    "__docId__": 83,
+    "__docId__": 86,
     "kind": "file",
     "name": "src/erros.js",
     "content": "class InvalidArgumentError extends Error {\n  constructor (mensagem) {\n    super(mensagem)\n    this.name = 'InvalidArgumentError'\n  }\n}\n\nclass InternalServerError extends Error {\n  constructor (mensagem) {\n    super(mensagem)\n    this.name = 'InternalServerError'\n  }\n}\n\nmodule.exports = { InvalidArgumentError, InternalServerError }\n",
@@ -1331,7 +1397,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 84,
+    "__docId__": 87,
     "kind": "class",
     "name": "InvalidArgumentError",
     "memberof": "src/erros.js",
@@ -1351,7 +1417,7 @@
     "ignore": true
   },
   {
-    "__docId__": 85,
+    "__docId__": 88,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/erros.js~InvalidArgumentError",
@@ -1366,7 +1432,7 @@
     "ignore": true
   },
   {
-    "__docId__": 86,
+    "__docId__": 89,
     "kind": "member",
     "name": "name",
     "memberof": "src/erros.js~InvalidArgumentError",
@@ -1384,7 +1450,7 @@
     "ignore": true
   },
   {
-    "__docId__": 87,
+    "__docId__": 90,
     "kind": "class",
     "name": "InternalServerError",
     "memberof": "src/erros.js",
@@ -1404,7 +1470,7 @@
     "ignore": true
   },
   {
-    "__docId__": 88,
+    "__docId__": 91,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/erros.js~InternalServerError",
@@ -1419,7 +1485,7 @@
     "ignore": true
   },
   {
-    "__docId__": 89,
+    "__docId__": 92,
     "kind": "member",
     "name": "name",
     "memberof": "src/erros.js~InternalServerError",
@@ -1437,7 +1503,7 @@
     "ignore": true
   },
   {
-    "__docId__": 90,
+    "__docId__": 93,
     "kind": "file",
     "name": "src/middleware-autorizacao.js",
     "content": "module.exports = (cargoObrigatorio = 'admin') => (req, res, proximo) => {\n  const cargoAtual = req.user.cargo\n\n  if (cargoAtual !== cargoObrigatorio) {\n    res.status(403)\n    res.end()\n  } else {\n    proximo()\n  }\n}\n",
@@ -1448,7 +1514,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 91,
+    "__docId__": 94,
     "kind": "file",
     "name": "src/posts/index.js",
     "content": "module.exports = {\n  modelo: require('./posts-modelo'),\n  rotas: require('./posts-rotas'),\n  controlador: require('./posts-controlador')\n}\n",
@@ -1459,7 +1525,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 92,
+    "__docId__": 95,
     "kind": "file",
     "name": "src/posts/posts-controlador.js",
     "content": "const Post = require('./posts-modelo')\nconst { InvalidArgumentError } = require('../erros')\n\nmodule.exports = {\n  async adiciona (req, res) {\n    try {\n      req.body.autor = req.user.id\n      const post = new Post(req.body)\n      await post.adiciona()\n\n      res.status(201).json(post)\n    } catch (erro) {\n      if (erro instanceof InvalidArgumentError) {\n        return res.status(400).json({ erro: erro.message })\n      }\n      res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async lista (req, res) {\n    try {\n      let posts\n\n      if (req.user.cargo === 'admin') {\n        posts = await Post.listarTodos()\n      } else {\n        posts = await Post.listarPorAutor(req.user.id)\n      }\n\n      res.json(posts)\n    } catch (erro) {\n      return res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async obterDetalhes (req, res) {\n    try {\n      let post\n\n      if (req.user.cargo === 'admin') {\n        post = await Post.buscaPorId(req.params.id)\n      } else {\n        post = await Post.buscaPorIdAutor(req.params.id, req.user.id)\n      }\n\n      res.json(post)\n    } catch (erro) {\n      return res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async remover (req, res) {\n    try {\n      let post\n\n      if (req.user.cargo === 'admin') {\n        post = await Post.buscaPorId(req.params.id)\n      } else {\n        post = await Post.buscaPorIdAutor(req.params.id, req.user.id)\n      }\n\n      if (post === null) {\n        res.status(404)\n        res.end()\n      }\n\n      post.remover()\n      res.status(204)\n      res.end()\n    } catch (erro) {\n      return res.status(500).json({ erro: erro.message })\n    }\n  }\n}\n",
@@ -1470,7 +1536,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 93,
+    "__docId__": 96,
     "kind": "variable",
     "name": "Post",
     "memberof": "src/posts/posts-controlador.js",
@@ -1491,7 +1557,7 @@
     "ignore": true
   },
   {
-    "__docId__": 94,
+    "__docId__": 97,
     "kind": "variable",
     "name": "InvalidArgumentError",
     "memberof": "src/posts/posts-controlador.js",
@@ -1512,7 +1578,7 @@
     "ignore": true
   },
   {
-    "__docId__": 95,
+    "__docId__": 98,
     "kind": "file",
     "name": "src/posts/posts-dao.js",
     "content": "const db = require('../../database')\nconst { InternalServerError } = require('../erros')\n\nconst { promisify } = require('util')\nconst dbRun = promisify(db.run).bind(db)\nconst dbGet = promisify(db.get).bind(db)\nconst dbAll = promisify(db.all).bind(db)\n\nmodule.exports = {\n  async adiciona (post) {\n    try {\n      await dbRun('INSERT INTO posts (titulo, conteudo, autor) VALUES (?, ?, ?)', [\n        post.titulo,\n        post.conteudo,\n        post.autor\n      ])\n    } catch (erro) {\n      throw new InternalServerError('Erro ao adicionar o post!')\n    }\n  },\n\n  async listar (idAutor) {\n    try {\n      let instrucoes = 'SELECT id, titulo FROM posts'\n      const params = []\n\n      if (idAutor) {\n        instrucoes = `${instrucoes} WHERE autor = ?`\n        params.push(idAutor)\n      }\n\n      return await dbAll(instrucoes, params)\n    } catch (erro) {\n      throw new InternalServerError('Erro ao listar os posts!')\n    }\n  },\n\n  async buscaPorId (id, idAutor) {\n    try {\n      let instrucoes = 'SELECT * FROM posts WHERE id = ?'\n      const parametros = [id]\n\n      if (idAutor) {\n        instrucoes = `${instrucoes} AND autor = ?`\n        parametros.push(idAutor)\n      }\n\n      return await dbGet(instrucoes, parametros)\n    } catch (erro) {\n      throw new InternalServerError('Não foi possível encontrar o post!')\n    }\n  },\n\n  async remover ({ id, autor }) {\n    try {\n      return await dbRun('DELETE FROM posts WHERE id = ? AND autor = ?', [id, autor])\n    } catch (erro) {\n      throw new InternalServerError('Erro ao tentar remover o post!')\n    }\n  }\n}\n",
@@ -1523,7 +1589,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 96,
+    "__docId__": 99,
     "kind": "variable",
     "name": "db",
     "memberof": "src/posts/posts-dao.js",
@@ -1544,7 +1610,7 @@
     "ignore": true
   },
   {
-    "__docId__": 97,
+    "__docId__": 100,
     "kind": "variable",
     "name": "InternalServerError",
     "memberof": "src/posts/posts-dao.js",
@@ -1565,7 +1631,7 @@
     "ignore": true
   },
   {
-    "__docId__": 98,
+    "__docId__": 101,
     "kind": "variable",
     "name": "promisify",
     "memberof": "src/posts/posts-dao.js",
@@ -1586,7 +1652,7 @@
     "ignore": true
   },
   {
-    "__docId__": 99,
+    "__docId__": 102,
     "kind": "variable",
     "name": "dbRun",
     "memberof": "src/posts/posts-dao.js",
@@ -1607,7 +1673,7 @@
     "ignore": true
   },
   {
-    "__docId__": 100,
+    "__docId__": 103,
     "kind": "variable",
     "name": "dbGet",
     "memberof": "src/posts/posts-dao.js",
@@ -1628,7 +1694,7 @@
     "ignore": true
   },
   {
-    "__docId__": 101,
+    "__docId__": 104,
     "kind": "variable",
     "name": "dbAll",
     "memberof": "src/posts/posts-dao.js",
@@ -1649,7 +1715,7 @@
     "ignore": true
   },
   {
-    "__docId__": 102,
+    "__docId__": 105,
     "kind": "file",
     "name": "src/posts/posts-modelo.js",
     "content": "const postsDao = require('./posts-dao')\nconst validacoes = require('../validacoes-comuns')\n\nclass Post {\n  constructor (post) {\n    this.id = post.id\n    this.titulo = post.titulo\n    this.conteudo = post.conteudo\n    this.autor = post.autor\n    this.valida()\n  }\n\n  adiciona () {\n    return postsDao.adiciona(this)\n  }\n\n  static async buscaPorId (id) {\n    const post = await postsDao.buscaPorId(id)\n\n    if (!post) {\n      return null\n    }\n\n    return new Post(post)\n  }\n\n  static async buscaPorIdAutor (id, idAutor) {\n    const post = await postsDao.buscaPorId(id, idAutor)\n    if (!post) {\n      return null\n    }\n\n    return new Post(post)\n  }\n\n  valida () {\n    validacoes.campoStringNaoNulo(this.titulo, 'titulo')\n    validacoes.campoTamanhoMinimo(this.titulo, 'titulo', 5)\n\n    validacoes.campoStringNaoNulo(this.conteudo, 'conteudo')\n    validacoes.campoTamanhoMaximo(this.conteudo, 'conteudo', 140)\n  }\n\n  remover () {\n    return postsDao.remover(this)\n  }\n\n  static listarPorAutor (idAutor) {\n    return postsDao.listar(idAutor)\n  }\n\n  static listarTodos () {\n    return postsDao.listar()\n  }\n}\n\nmodule.exports = Post\n",
@@ -1660,7 +1726,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 103,
+    "__docId__": 106,
     "kind": "variable",
     "name": "postsDao",
     "memberof": "src/posts/posts-modelo.js",
@@ -1681,7 +1747,7 @@
     "ignore": true
   },
   {
-    "__docId__": 104,
+    "__docId__": 107,
     "kind": "variable",
     "name": "validacoes",
     "memberof": "src/posts/posts-modelo.js",
@@ -1702,7 +1768,7 @@
     "ignore": true
   },
   {
-    "__docId__": 105,
+    "__docId__": 108,
     "kind": "class",
     "name": "Post",
     "memberof": "src/posts/posts-modelo.js",
@@ -1719,7 +1785,7 @@
     "ignore": true
   },
   {
-    "__docId__": 106,
+    "__docId__": 109,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1734,7 +1800,7 @@
     "ignore": true
   },
   {
-    "__docId__": 107,
+    "__docId__": 110,
     "kind": "member",
     "name": "id",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1752,7 +1818,7 @@
     "ignore": true
   },
   {
-    "__docId__": 108,
+    "__docId__": 111,
     "kind": "member",
     "name": "titulo",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1770,7 +1836,7 @@
     "ignore": true
   },
   {
-    "__docId__": 109,
+    "__docId__": 112,
     "kind": "member",
     "name": "conteudo",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1788,7 +1854,7 @@
     "ignore": true
   },
   {
-    "__docId__": 110,
+    "__docId__": 113,
     "kind": "member",
     "name": "autor",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1806,7 +1872,7 @@
     "ignore": true
   },
   {
-    "__docId__": 111,
+    "__docId__": 114,
     "kind": "method",
     "name": "adiciona",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1827,7 +1893,7 @@
     "ignore": true
   },
   {
-    "__docId__": 112,
+    "__docId__": 115,
     "kind": "method",
     "name": "buscaPorId",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1855,7 +1921,7 @@
     "ignore": true
   },
   {
-    "__docId__": 113,
+    "__docId__": 116,
     "kind": "method",
     "name": "buscaPorIdAutor",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1889,7 +1955,7 @@
     "ignore": true
   },
   {
-    "__docId__": 114,
+    "__docId__": 117,
     "kind": "method",
     "name": "valida",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1906,7 +1972,7 @@
     "ignore": true
   },
   {
-    "__docId__": 115,
+    "__docId__": 118,
     "kind": "method",
     "name": "remover",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1927,7 +1993,7 @@
     "ignore": true
   },
   {
-    "__docId__": 116,
+    "__docId__": 119,
     "kind": "method",
     "name": "listarPorAutor",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1955,7 +2021,7 @@
     "ignore": true
   },
   {
-    "__docId__": 117,
+    "__docId__": 120,
     "kind": "method",
     "name": "listarTodos",
     "memberof": "src/posts/posts-modelo.js~Post",
@@ -1976,7 +2042,7 @@
     "ignore": true
   },
   {
-    "__docId__": 118,
+    "__docId__": 121,
     "kind": "file",
     "name": "src/posts/posts-rotas.js",
     "content": "const postsControlador = require('./posts-controlador')\nconst { middlewaresAutenticacao } = require('../usuarios')\n\nmodule.exports = app => {\n  app\n    .route('/post')\n    .get(\n      middlewaresAutenticacao.bearer,\n      postsControlador.lista\n    )\n    .post(\n      middlewaresAutenticacao.bearer,\n      postsControlador.adiciona\n    )\n\n  app.route('/post/:id')\n    .get(\n      middlewaresAutenticacao.bearer,\n      postsControlador.obterDetalhes\n    )\n    .delete(\n      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local],\n      postsControlador.remover\n    )\n}\n",
@@ -1987,7 +2053,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 119,
+    "__docId__": 122,
     "kind": "variable",
     "name": "postsControlador",
     "memberof": "src/posts/posts-rotas.js",
@@ -2008,7 +2074,7 @@
     "ignore": true
   },
   {
-    "__docId__": 120,
+    "__docId__": 123,
     "kind": "variable",
     "name": "middlewaresAutenticacao",
     "memberof": "src/posts/posts-rotas.js",
@@ -2029,7 +2095,7 @@
     "ignore": true
   },
   {
-    "__docId__": 121,
+    "__docId__": 124,
     "kind": "file",
     "name": "src/usuarios/emails.js",
     "content": "const nodemailer = require('nodemailer')\n\nconst configuracaoEmailProducao = {\n  host: process.env.EMAIL_HOST,\n  auth: {\n    user: process.env.EMAIL_USUARIO,\n    pass: process.env.EMAIL_SENHA\n  },\n  secure: true\n}\n\nconst configuracaoEmailTeste = (contaTeste) => ({\n  host: 'smtp.ethereal.email',\n  auth: contaTeste\n})\n\nasync function criaConfiguracaoEmail () {\n  if (process.env.NODE_ENV === 'production') {\n    return configuracaoEmailProducao\n  } else {\n    const contaTeste = await nodemailer.createTestAccount()\n    return configuracaoEmailTeste(contaTeste)\n  }\n}\n\nclass Email {\n  async enviaEmail () {\n    const configuracaoEmail = await criaConfiguracaoEmail()\n    const transportador = nodemailer.createTransport(configuracaoEmail)\n    const info = await transportador.sendMail(this)\n\n    if (process.env.NODE_ENV !== 'production') {\n      console.log('URL: ' + nodemailer.getTestMessageUrl(info))\n    }\n  }\n}\n\nclass EmailVerificacao extends Email {\n  constructor (usuario, endereco) {\n    super()\n    this.from = '\"Blog do Código\" <noreply@blogdocodigo.com.br>'\n    this.to = usuario.email\n    this.subject = 'Verificação de e-mail'\n    this.text = `Olá! Verifique seu e-mail aqui: ${endereco}`\n    this.html = `<h1>Olá!</h1> Verifique seu e-mail aqui: <a href=\"${endereco}\">${endereco}</a>`\n  }\n}\n\nmodule.exports = { EmailVerificacao }\n",
@@ -2040,7 +2106,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 122,
+    "__docId__": 125,
     "kind": "variable",
     "name": "nodemailer",
     "memberof": "src/usuarios/emails.js",
@@ -2061,7 +2127,7 @@
     "ignore": true
   },
   {
-    "__docId__": 123,
+    "__docId__": 126,
     "kind": "variable",
     "name": "configuracaoEmailProducao",
     "memberof": "src/usuarios/emails.js",
@@ -2082,7 +2148,7 @@
     "ignore": true
   },
   {
-    "__docId__": 124,
+    "__docId__": 127,
     "kind": "function",
     "name": "configuracaoEmailTeste",
     "memberof": "src/usuarios/emails.js",
@@ -2109,7 +2175,7 @@
     "ignore": true
   },
   {
-    "__docId__": 125,
+    "__docId__": 128,
     "kind": "function",
     "name": "criaConfiguracaoEmail",
     "memberof": "src/usuarios/emails.js",
@@ -2133,7 +2199,7 @@
     "ignore": true
   },
   {
-    "__docId__": 126,
+    "__docId__": 129,
     "kind": "class",
     "name": "Email",
     "memberof": "src/usuarios/emails.js",
@@ -2150,7 +2216,7 @@
     "ignore": true
   },
   {
-    "__docId__": 127,
+    "__docId__": 130,
     "kind": "method",
     "name": "enviaEmail",
     "memberof": "src/usuarios/emails.js~Email",
@@ -2167,7 +2233,7 @@
     "ignore": true
   },
   {
-    "__docId__": 128,
+    "__docId__": 131,
     "kind": "class",
     "name": "EmailVerificacao",
     "memberof": "src/usuarios/emails.js",
@@ -2187,7 +2253,7 @@
     "ignore": true
   },
   {
-    "__docId__": 129,
+    "__docId__": 132,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/usuarios/emails.js~EmailVerificacao",
@@ -2202,7 +2268,7 @@
     "ignore": true
   },
   {
-    "__docId__": 130,
+    "__docId__": 133,
     "kind": "member",
     "name": "from",
     "memberof": "src/usuarios/emails.js~EmailVerificacao",
@@ -2220,7 +2286,7 @@
     "ignore": true
   },
   {
-    "__docId__": 131,
+    "__docId__": 134,
     "kind": "member",
     "name": "to",
     "memberof": "src/usuarios/emails.js~EmailVerificacao",
@@ -2238,7 +2304,7 @@
     "ignore": true
   },
   {
-    "__docId__": 132,
+    "__docId__": 135,
     "kind": "member",
     "name": "subject",
     "memberof": "src/usuarios/emails.js~EmailVerificacao",
@@ -2256,7 +2322,7 @@
     "ignore": true
   },
   {
-    "__docId__": 133,
+    "__docId__": 136,
     "kind": "member",
     "name": "text",
     "memberof": "src/usuarios/emails.js~EmailVerificacao",
@@ -2274,7 +2340,7 @@
     "ignore": true
   },
   {
-    "__docId__": 134,
+    "__docId__": 137,
     "kind": "member",
     "name": "html",
     "memberof": "src/usuarios/emails.js~EmailVerificacao",
@@ -2292,7 +2358,7 @@
     "ignore": true
   },
   {
-    "__docId__": 135,
+    "__docId__": 138,
     "kind": "file",
     "name": "src/usuarios/estrategias-autenticacao.js",
     "content": "const passport = require('passport')\nconst LocalStrategy = require('passport-local').Strategy\nconst BearerStrategy = require('passport-http-bearer').Strategy\n\nconst Usuario = require('./usuarios-modelo')\n\nconst { InvalidArgumentError } = require('../erros')\n\nconst bcrypt = require('bcrypt')\n\nconst tokens = require('./tokens')\n\nfunction verificaUsuario (usuario) {\n  if (!usuario) {\n    throw new InvalidArgumentError('Não existe usuário com esse e-mail!')\n  }\n}\n\nasync function verificaSenha (senha, senhaHash) {\n  const senhaValida = await bcrypt.compare(senha, senhaHash)\n  if (!senhaValida) {\n    throw new InvalidArgumentError('E-mail ou senha inválidos!')\n  }\n}\n\npassport.use(\n  new LocalStrategy(\n    {\n      usernameField: 'email',\n      passwordField: 'senha',\n      session: false\n    },\n    async (email, senha, done) => {\n      try {\n        const usuario = await Usuario.buscaPorEmail(email)\n        verificaUsuario(usuario)\n        await verificaSenha(senha, usuario.senhaHash)\n\n        done(null, usuario)\n      } catch (erro) {\n        done(erro)\n      }\n    }\n  )\n)\n\npassport.use(\n  new BearerStrategy(async (token, done) => {\n    try {\n      const id = await tokens.access.verifica(token)\n      const usuario = await Usuario.buscaPorId(id)\n      done(null, usuario, { token })\n    } catch (erro) {\n      done(erro)\n    }\n  })\n)\n",
@@ -2303,7 +2369,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 136,
+    "__docId__": 139,
     "kind": "variable",
     "name": "passport",
     "memberof": "src/usuarios/estrategias-autenticacao.js",
@@ -2324,7 +2390,7 @@
     "ignore": true
   },
   {
-    "__docId__": 137,
+    "__docId__": 140,
     "kind": "variable",
     "name": "LocalStrategy",
     "memberof": "src/usuarios/estrategias-autenticacao.js",
@@ -2345,7 +2411,7 @@
     "ignore": true
   },
   {
-    "__docId__": 138,
+    "__docId__": 141,
     "kind": "variable",
     "name": "BearerStrategy",
     "memberof": "src/usuarios/estrategias-autenticacao.js",
@@ -2366,7 +2432,7 @@
     "ignore": true
   },
   {
-    "__docId__": 139,
+    "__docId__": 142,
     "kind": "variable",
     "name": "Usuario",
     "memberof": "src/usuarios/estrategias-autenticacao.js",
@@ -2387,7 +2453,7 @@
     "ignore": true
   },
   {
-    "__docId__": 140,
+    "__docId__": 143,
     "kind": "variable",
     "name": "InvalidArgumentError",
     "memberof": "src/usuarios/estrategias-autenticacao.js",
@@ -2408,7 +2474,7 @@
     "ignore": true
   },
   {
-    "__docId__": 141,
+    "__docId__": 144,
     "kind": "variable",
     "name": "bcrypt",
     "memberof": "src/usuarios/estrategias-autenticacao.js",
@@ -2429,7 +2495,7 @@
     "ignore": true
   },
   {
-    "__docId__": 142,
+    "__docId__": 145,
     "kind": "variable",
     "name": "tokens",
     "memberof": "src/usuarios/estrategias-autenticacao.js",
@@ -2450,7 +2516,7 @@
     "ignore": true
   },
   {
-    "__docId__": 143,
+    "__docId__": 146,
     "kind": "function",
     "name": "verificaUsuario",
     "memberof": "src/usuarios/estrategias-autenticacao.js",
@@ -2477,7 +2543,7 @@
     "ignore": true
   },
   {
-    "__docId__": 144,
+    "__docId__": 147,
     "kind": "function",
     "name": "verificaSenha",
     "memberof": "src/usuarios/estrategias-autenticacao.js",
@@ -2510,7 +2576,7 @@
     "ignore": true
   },
   {
-    "__docId__": 145,
+    "__docId__": 148,
     "kind": "file",
     "name": "src/usuarios/index.js",
     "content": "module.exports = {\n  rotas: require('./usuarios-rotas'),\n  controlador: require('./usuarios-controlador'),\n  modelo: require('./usuarios-modelo'),\n  estrategiasAutenticacao: require('./estrategias-autenticacao'),\n  middlewaresAutenticacao: require('./middlewares-autenticacao')\n}\n",
@@ -2521,7 +2587,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 146,
+    "__docId__": 149,
     "kind": "file",
     "name": "src/usuarios/middlewares-autenticacao.js",
     "content": "const passport = require('passport')\nconst Usuario = require('./usuarios-modelo')\nconst tokens = require('./tokens')\n\nmodule.exports = {\n  local (req, res, next) {\n    passport.authenticate(\n      'local',\n      { session: false },\n      (erro, usuario, info) => {\n        if (erro && erro.name === 'InvalidArgumentError') {\n          return res.status(401).json({ erro: erro.message })\n        }\n\n        if (erro) {\n          return res.status(500).json({ erro: erro.message })\n        }\n\n        if (!usuario) {\n          return res.status(401).json()\n        }\n\n        req.user = usuario\n        return next()\n      }\n    )(req, res, next)\n  },\n\n  bearer (req, res, next) {\n    passport.authenticate(\n      'bearer',\n      { session: false },\n      (erro, usuario, info) => {\n        if (erro && erro.name === 'JsonWebTokenError') {\n          return res.status(401).json({ erro: erro.message })\n        }\n\n        if (erro && erro.name === 'TokenExpiredError') {\n          return res\n            .status(401)\n            .json({ erro: erro.message, expiradoEm: erro.expiredAt })\n        }\n\n        if (erro) {\n          return res.status(500).json({ erro: erro.message })\n        }\n\n        if (!usuario) {\n          return res.status(401).json()\n        }\n\n        req.token = info.token\n        req.user = usuario\n        return next()\n      }\n    )(req, res, next)\n  },\n\n  async refresh (req, res, next) {\n    try {\n      const { refreshToken } = req.body\n      const id = await tokens.refresh.verifica(refreshToken)\n      await tokens.refresh.invalida(refreshToken)\n      req.user = await Usuario.buscaPorId(id)\n      return next()\n    } catch (erro) {\n      if (erro.name === 'InvalidArgumentError') {\n        return res.status(401).json({ erro: erro.message })\n      }\n      return res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async verificacaoEmail (req, res, next) {\n    try {\n      const { token } = req.params\n      const id = await tokens.verificacaoEmail.verifica(token)\n      const usuario = await Usuario.buscaPorId(id)\n      req.user = usuario\n      next()\n    } catch (erro) {\n      if (erro.name === 'JsonWebTokenError') {\n        return res.status(401).json({ erro: erro.message })\n      }\n\n      if (erro.name === 'TokenExpiredError') {\n        return res.status(401).json({\n          erro: erro.message,\n          expiradoEm: erro.expiredAt\n        })\n      }\n\n      return res.status(500).json({ erro: erro.message })\n    }\n  }\n}\n",
@@ -2532,7 +2598,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 147,
+    "__docId__": 150,
     "kind": "variable",
     "name": "passport",
     "memberof": "src/usuarios/middlewares-autenticacao.js",
@@ -2553,7 +2619,7 @@
     "ignore": true
   },
   {
-    "__docId__": 148,
+    "__docId__": 151,
     "kind": "variable",
     "name": "Usuario",
     "memberof": "src/usuarios/middlewares-autenticacao.js",
@@ -2574,7 +2640,7 @@
     "ignore": true
   },
   {
-    "__docId__": 149,
+    "__docId__": 152,
     "kind": "variable",
     "name": "tokens",
     "memberof": "src/usuarios/middlewares-autenticacao.js",
@@ -2595,7 +2661,7 @@
     "ignore": true
   },
   {
-    "__docId__": 150,
+    "__docId__": 153,
     "kind": "file",
     "name": "src/usuarios/tokens.js",
     "content": "const jwt = require('jsonwebtoken')\nconst crypto = require('crypto')\nconst moment = require('moment')\n\nconst { InvalidArgumentError } = require('../erros')\n\nconst allowlistRefreshToken = require('../../redis/allowlist-refresh-token')\nconst blocklistAccessToken = require('../../redis/blocklist-access-token')\n\nfunction criaTokenJWT (id, [tempoQuantidade, tempoUnidade]) {\n  const payload = { id }\n  const token = jwt.sign(payload, process.env.CHAVE_JWT, {\n    expiresIn: tempoQuantidade + tempoUnidade\n  })\n  return token\n}\n\nasync function verificaTokenJWT (token, nome, blocklist) {\n  await verificaTokenNaBlocklist(token, nome, blocklist)\n  const { id } = jwt.verify(token, process.env.CHAVE_JWT)\n  return id\n}\n\nasync function verificaTokenNaBlocklist (token, nome, blocklist) {\n  if (!blocklist) {\n    return\n  }\n\n  const tokenNaBlocklist = await blocklist.contemToken(token)\n  if (tokenNaBlocklist) {\n    throw new jwt.JsonWebTokenError(`${nome} inválido por logout!`)\n  }\n}\n\nfunction invalidaTokenJWT (token, blocklist) {\n  return blocklist.adiciona(token)\n}\n\nasync function criaTokenOpaco (id, [tempoQuantidade, tempoUnidade], allowlist) {\n  const tokenOpaco = crypto.randomBytes(24).toString('hex')\n  const dataExpiracao = moment().add(tempoQuantidade, tempoUnidade).unix()\n  await allowlist.adiciona(tokenOpaco, id, dataExpiracao)\n  return tokenOpaco\n}\n\nasync function verificaTokenOpaco (token, nome, allowlist) {\n  verificaTokenEnviado(token, nome)\n  const id = await allowlist.buscaValor(token)\n  verificaTokenValido(id, nome)\n  return id\n}\n\nasync function invalidaTokenOpaco (token, allowlist) {\n  await allowlist.deleta(token)\n}\n\nfunction verificaTokenValido (id, nome) {\n  if (!id) {\n    throw new InvalidArgumentError(`${nome} inválido!`)\n  }\n}\n\nfunction verificaTokenEnviado (token, nome) {\n  if (!token) {\n    throw new InvalidArgumentError(`${nome} não enviado!`)\n  }\n}\n\nmodule.exports = {\n  access: {\n    nome: 'access token',\n    lista: blocklistAccessToken,\n    expiracao: [15, 'm'],\n    cria (id) {\n      return criaTokenJWT(id, this.expiracao)\n    },\n    verifica (token) {\n      return verificaTokenJWT(token, this.nome, this.lista)\n    },\n    invalida (token) {\n      return invalidaTokenJWT(token, this.lista)\n    }\n  },\n  refresh: {\n    nome: 'refresh token',\n    lista: allowlistRefreshToken,\n    expiracao: [5, 'd'],\n    cria (id) {\n      return criaTokenOpaco(id, this.expiracao, this.lista)\n    },\n    verifica (token) {\n      return verificaTokenOpaco(token, this.nome, this.lista)\n    },\n    invalida (token) {\n      return invalidaTokenOpaco(token, this.lista)\n    }\n  },\n  verificacaoEmail: {\n    nome: 'token de verificação de e-mail',\n    expiracao: [1, 'h'],\n    cria (id) {\n      return criaTokenJWT(id, this.expiracao)\n    },\n    verifica (token) {\n      return verificaTokenJWT(token, this.nome)\n    }\n  }\n}\n",
@@ -2606,7 +2672,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 151,
+    "__docId__": 154,
     "kind": "variable",
     "name": "jwt",
     "memberof": "src/usuarios/tokens.js",
@@ -2627,7 +2693,7 @@
     "ignore": true
   },
   {
-    "__docId__": 152,
+    "__docId__": 155,
     "kind": "variable",
     "name": "crypto",
     "memberof": "src/usuarios/tokens.js",
@@ -2648,7 +2714,7 @@
     "ignore": true
   },
   {
-    "__docId__": 153,
+    "__docId__": 156,
     "kind": "variable",
     "name": "moment",
     "memberof": "src/usuarios/tokens.js",
@@ -2669,7 +2735,7 @@
     "ignore": true
   },
   {
-    "__docId__": 154,
+    "__docId__": 157,
     "kind": "variable",
     "name": "InvalidArgumentError",
     "memberof": "src/usuarios/tokens.js",
@@ -2690,7 +2756,7 @@
     "ignore": true
   },
   {
-    "__docId__": 155,
+    "__docId__": 158,
     "kind": "variable",
     "name": "allowlistRefreshToken",
     "memberof": "src/usuarios/tokens.js",
@@ -2711,7 +2777,7 @@
     "ignore": true
   },
   {
-    "__docId__": 156,
+    "__docId__": 159,
     "kind": "variable",
     "name": "blocklistAccessToken",
     "memberof": "src/usuarios/tokens.js",
@@ -2732,7 +2798,7 @@
     "ignore": true
   },
   {
-    "__docId__": 157,
+    "__docId__": 160,
     "kind": "function",
     "name": "criaTokenJWT",
     "memberof": "src/usuarios/tokens.js",
@@ -2774,7 +2840,7 @@
     "ignore": true
   },
   {
-    "__docId__": 158,
+    "__docId__": 161,
     "kind": "function",
     "name": "verificaTokenJWT",
     "memberof": "src/usuarios/tokens.js",
@@ -2817,7 +2883,7 @@
     "ignore": true
   },
   {
-    "__docId__": 159,
+    "__docId__": 162,
     "kind": "function",
     "name": "verificaTokenNaBlocklist",
     "memberof": "src/usuarios/tokens.js",
@@ -2856,7 +2922,7 @@
     "ignore": true
   },
   {
-    "__docId__": 160,
+    "__docId__": 163,
     "kind": "function",
     "name": "invalidaTokenJWT",
     "memberof": "src/usuarios/tokens.js",
@@ -2893,7 +2959,7 @@
     "ignore": true
   },
   {
-    "__docId__": 161,
+    "__docId__": 164,
     "kind": "function",
     "name": "criaTokenOpaco",
     "memberof": "src/usuarios/tokens.js",
@@ -2941,7 +3007,7 @@
     "ignore": true
   },
   {
-    "__docId__": 162,
+    "__docId__": 165,
     "kind": "function",
     "name": "verificaTokenOpaco",
     "memberof": "src/usuarios/tokens.js",
@@ -2984,7 +3050,7 @@
     "ignore": true
   },
   {
-    "__docId__": 163,
+    "__docId__": 166,
     "kind": "function",
     "name": "invalidaTokenOpaco",
     "memberof": "src/usuarios/tokens.js",
@@ -3017,7 +3083,7 @@
     "ignore": true
   },
   {
-    "__docId__": 164,
+    "__docId__": 167,
     "kind": "function",
     "name": "verificaTokenValido",
     "memberof": "src/usuarios/tokens.js",
@@ -3050,7 +3116,7 @@
     "ignore": true
   },
   {
-    "__docId__": 165,
+    "__docId__": 168,
     "kind": "function",
     "name": "verificaTokenEnviado",
     "memberof": "src/usuarios/tokens.js",
@@ -3083,7 +3149,7 @@
     "ignore": true
   },
   {
-    "__docId__": 166,
+    "__docId__": 169,
     "kind": "file",
     "name": "src/usuarios/usuarios-controlador.js",
     "content": "const Usuario = require('./usuarios-modelo')\nconst { InvalidArgumentError } = require('../erros')\n\nconst tokens = require('./tokens')\nconst { EmailVerificacao } = require('./emails')\n\nfunction geraEndereco (rota, token) {\n  const baseURL = process.env.BASE_URL\n  return `${baseURL}${rota}${token}`\n}\n\nmodule.exports = {\n  async adiciona (req, res) {\n    const { nome, email, senha, cargo } = req.body\n\n    try {\n      const usuario = new Usuario({\n        nome,\n        email,\n        cargo,\n        emailVerificado: false\n      })\n      await usuario.adicionaSenha(senha)\n      await usuario.adiciona()\n\n      const token = tokens.verificacaoEmail.cria(usuario.id)\n      const endereco = geraEndereco('/usuario/verifica_email/', token)\n      const emailVerificacao = new EmailVerificacao(usuario, endereco)\n      emailVerificacao.enviaEmail().catch(console.log)\n\n      res.status(201).json()\n    } catch (erro) {\n      if (erro instanceof InvalidArgumentError) {\n        return res.status(400).json({ erro: erro.message })\n      }\n      res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async login (req, res) {\n    try {\n      const accessToken = tokens.access.cria(req.user.id)\n      const refreshToken = await tokens.refresh.cria(req.user.id)\n      res.set('Authorization', accessToken)\n      res.status(200).json({ refreshToken })\n    } catch (erro) {\n      res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async logout (req, res) {\n    try {\n      const token = req.token\n      await tokens.access.invalida(token)\n      res.status(204).json()\n    } catch (erro) {\n      res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async lista (req, res) {\n    try {\n      const usuarios = await Usuario.lista()\n      res.json(usuarios)\n    } catch (erro) {\n      res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async verificaEmail (req, res) {\n    try {\n      const usuario = req.user\n      await usuario.verificaEmail()\n      res.status(200).json()\n    } catch (erro) {\n      res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async deleta (req, res) {\n    try {\n      const usuario = await Usuario.buscaPorId(req.params.id)\n      await usuario.deleta()\n      res.status(200).json()\n    } catch (erro) {\n      res.status(500).json({ erro: erro })\n    }\n  }\n}\n",
@@ -3094,7 +3160,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 167,
+    "__docId__": 170,
     "kind": "variable",
     "name": "Usuario",
     "memberof": "src/usuarios/usuarios-controlador.js",
@@ -3115,7 +3181,7 @@
     "ignore": true
   },
   {
-    "__docId__": 168,
+    "__docId__": 171,
     "kind": "variable",
     "name": "InvalidArgumentError",
     "memberof": "src/usuarios/usuarios-controlador.js",
@@ -3136,7 +3202,7 @@
     "ignore": true
   },
   {
-    "__docId__": 169,
+    "__docId__": 172,
     "kind": "variable",
     "name": "tokens",
     "memberof": "src/usuarios/usuarios-controlador.js",
@@ -3157,7 +3223,7 @@
     "ignore": true
   },
   {
-    "__docId__": 170,
+    "__docId__": 173,
     "kind": "variable",
     "name": "EmailVerificacao",
     "memberof": "src/usuarios/usuarios-controlador.js",
@@ -3178,7 +3244,7 @@
     "ignore": true
   },
   {
-    "__docId__": 171,
+    "__docId__": 174,
     "kind": "function",
     "name": "geraEndereco",
     "memberof": "src/usuarios/usuarios-controlador.js",
@@ -3215,7 +3281,7 @@
     "ignore": true
   },
   {
-    "__docId__": 172,
+    "__docId__": 175,
     "kind": "file",
     "name": "src/usuarios/usuarios-dao.js",
     "content": "const db = require('../../database')\nconst { InternalServerError } = require('../erros')\n\nconst { promisify } = require('util')\nconst dbRun = promisify(db.run).bind(db)\nconst dbGet = promisify(db.get).bind(db)\nconst dbAll = promisify(db.all).bind(db)\n\nmodule.exports = {\n  async adiciona (usuario) {\n    try {\n      await dbRun(\n        `INSERT INTO usuarios (nome, email, senhaHash, cargo, emailVerificado) \n        VALUES (?, ?, ?, ?, ?)`,\n        [\n          usuario.nome,\n          usuario.email,\n          usuario.senhaHash,\n          usuario.cargo,\n          usuario.emailVerificado\n        ]\n      )\n    } catch (erro) {\n      throw new InternalServerError('Erro ao adicionar o usuário!')\n    }\n  },\n\n  async buscaPorId (id) {\n    try {\n      return await dbGet('SELECT * FROM usuarios WHERE id = ?', [id])\n    } catch (erro) {\n      throw new InternalServerError('Não foi possível encontrar o usuário!')\n    }\n  },\n\n  async buscaPorEmail (email) {\n    try {\n      return await dbGet('SELECT * FROM usuarios WHERE email = ?', [email])\n    } catch (erro) {\n      throw new InternalServerError('Não foi possível encontrar o usuário!')\n    }\n  },\n\n  async lista () {\n    try {\n      return await dbAll('SELECT * FROM usuarios')\n    } catch (erro) {\n      throw new InternalServerError('Erro ao listar usuários!')\n    }\n  },\n\n  async modificaEmailVerificado (usuario, emailVerificado) {\n    try {\n      await dbRun('UPDATE usuarios SET emailVerificado = ? WHERE id = ?', [\n        emailVerificado,\n        usuario.id\n      ])\n    } catch (erro) {\n      throw new InternalServerError('Erro ao modificar a verficação de e-mail!')\n    }\n  },\n\n  async deleta (usuario) {\n    try {\n      await dbRun('DELETE FROM usuarios WHERE id = ?', [usuario.id])\n    } catch (erro) {\n      throw new InternalServerError('Erro ao deletar o usuário')\n    }\n  }\n}\n",
@@ -3226,7 +3292,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 173,
+    "__docId__": 176,
     "kind": "variable",
     "name": "db",
     "memberof": "src/usuarios/usuarios-dao.js",
@@ -3247,7 +3313,7 @@
     "ignore": true
   },
   {
-    "__docId__": 174,
+    "__docId__": 177,
     "kind": "variable",
     "name": "InternalServerError",
     "memberof": "src/usuarios/usuarios-dao.js",
@@ -3268,7 +3334,7 @@
     "ignore": true
   },
   {
-    "__docId__": 175,
+    "__docId__": 178,
     "kind": "variable",
     "name": "promisify",
     "memberof": "src/usuarios/usuarios-dao.js",
@@ -3289,7 +3355,7 @@
     "ignore": true
   },
   {
-    "__docId__": 176,
+    "__docId__": 179,
     "kind": "variable",
     "name": "dbRun",
     "memberof": "src/usuarios/usuarios-dao.js",
@@ -3310,7 +3376,7 @@
     "ignore": true
   },
   {
-    "__docId__": 177,
+    "__docId__": 180,
     "kind": "variable",
     "name": "dbGet",
     "memberof": "src/usuarios/usuarios-dao.js",
@@ -3331,7 +3397,7 @@
     "ignore": true
   },
   {
-    "__docId__": 178,
+    "__docId__": 181,
     "kind": "variable",
     "name": "dbAll",
     "memberof": "src/usuarios/usuarios-dao.js",
@@ -3352,7 +3418,7 @@
     "ignore": true
   },
   {
-    "__docId__": 179,
+    "__docId__": 182,
     "kind": "file",
     "name": "src/usuarios/usuarios-modelo.js",
     "content": "const usuariosDao = require('./usuarios-dao')\nconst { InvalidArgumentError } = require('../erros')\nconst validacoes = require('../validacoes-comuns')\nconst bcrypt = require('bcrypt')\n\nclass Usuario {\n  constructor (usuario) {\n    this.id = usuario.id\n    this.nome = usuario.nome\n    this.email = usuario.email\n    this.senhaHash = usuario.senhaHash\n    this.emailVerificado = usuario.emailVerificado\n    this.cargo = usuario.cargo\n    this.valida()\n  }\n\n  async adiciona () {\n    if (await Usuario.buscaPorEmail(this.email)) {\n      throw new InvalidArgumentError('O usuário já existe!')\n    }\n\n    await usuariosDao.adiciona(this)\n    const { id } = await usuariosDao.buscaPorEmail(this.email)\n    this.id = id\n  }\n\n  async adicionaSenha (senha) {\n    validacoes.campoStringNaoNulo(senha, 'senha')\n    validacoes.campoTamanhoMinimo(senha, 'senha', 8)\n    validacoes.campoTamanhoMaximo(senha, 'senha', 64)\n\n    this.senhaHash = await Usuario.gerarSenhaHash(senha)\n  }\n\n  valida () {\n    validacoes.campoStringNaoNulo(this.nome, 'nome')\n    validacoes.campoStringNaoNulo(this.email, 'email')\n    const cargos = ['admin', 'editor']\n\n    if (cargos.indexOf(this.cargo) === -1) {\n      throw new InvalidArgumentError(`Cargo inválido. Valores aceitos são: ${cargos.join(', ')}`)\n    }\n  }\n\n  async verificaEmail () {\n    this.emailVerificado = true\n    await usuariosDao.modificaEmailVerificado(this, this.emailVerificado)\n  }\n\n  async deleta () {\n    return usuariosDao.deleta(this)\n  }\n\n  static async buscaPorId (id) {\n    const usuario = await usuariosDao.buscaPorId(id)\n    if (!usuario) {\n      return null\n    }\n\n    return new Usuario(usuario)\n  }\n\n  static async buscaPorEmail (email) {\n    const usuario = await usuariosDao.buscaPorEmail(email)\n    if (!usuario) {\n      return null\n    }\n\n    return new Usuario(usuario)\n  }\n\n  static lista () {\n    return usuariosDao.lista()\n  }\n\n  static gerarSenhaHash (senha) {\n    const custoHash = 12\n    return bcrypt.hash(senha, custoHash)\n  }\n}\n\nmodule.exports = Usuario\n",
@@ -3363,7 +3429,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 180,
+    "__docId__": 183,
     "kind": "variable",
     "name": "usuariosDao",
     "memberof": "src/usuarios/usuarios-modelo.js",
@@ -3384,7 +3450,7 @@
     "ignore": true
   },
   {
-    "__docId__": 181,
+    "__docId__": 184,
     "kind": "variable",
     "name": "InvalidArgumentError",
     "memberof": "src/usuarios/usuarios-modelo.js",
@@ -3405,7 +3471,7 @@
     "ignore": true
   },
   {
-    "__docId__": 182,
+    "__docId__": 185,
     "kind": "variable",
     "name": "validacoes",
     "memberof": "src/usuarios/usuarios-modelo.js",
@@ -3426,7 +3492,7 @@
     "ignore": true
   },
   {
-    "__docId__": 183,
+    "__docId__": 186,
     "kind": "variable",
     "name": "bcrypt",
     "memberof": "src/usuarios/usuarios-modelo.js",
@@ -3447,7 +3513,7 @@
     "ignore": true
   },
   {
-    "__docId__": 184,
+    "__docId__": 187,
     "kind": "class",
     "name": "Usuario",
     "memberof": "src/usuarios/usuarios-modelo.js",
@@ -3464,7 +3530,7 @@
     "ignore": true
   },
   {
-    "__docId__": 185,
+    "__docId__": 188,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3479,7 +3545,7 @@
     "ignore": true
   },
   {
-    "__docId__": 186,
+    "__docId__": 189,
     "kind": "member",
     "name": "id",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3497,7 +3563,7 @@
     "ignore": true
   },
   {
-    "__docId__": 187,
+    "__docId__": 190,
     "kind": "member",
     "name": "nome",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3515,7 +3581,7 @@
     "ignore": true
   },
   {
-    "__docId__": 188,
+    "__docId__": 191,
     "kind": "member",
     "name": "email",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3533,7 +3599,7 @@
     "ignore": true
   },
   {
-    "__docId__": 189,
+    "__docId__": 192,
     "kind": "member",
     "name": "senhaHash",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3551,7 +3617,7 @@
     "ignore": true
   },
   {
-    "__docId__": 190,
+    "__docId__": 193,
     "kind": "member",
     "name": "emailVerificado",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3569,7 +3635,7 @@
     "ignore": true
   },
   {
-    "__docId__": 191,
+    "__docId__": 194,
     "kind": "member",
     "name": "cargo",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3587,7 +3653,7 @@
     "ignore": true
   },
   {
-    "__docId__": 192,
+    "__docId__": 195,
     "kind": "method",
     "name": "adiciona",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3604,7 +3670,7 @@
     "ignore": true
   },
   {
-    "__docId__": 194,
+    "__docId__": 197,
     "kind": "method",
     "name": "adicionaSenha",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3628,7 +3694,7 @@
     "ignore": true
   },
   {
-    "__docId__": 196,
+    "__docId__": 199,
     "kind": "method",
     "name": "valida",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3645,7 +3711,7 @@
     "ignore": true
   },
   {
-    "__docId__": 197,
+    "__docId__": 200,
     "kind": "method",
     "name": "verificaEmail",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3662,7 +3728,7 @@
     "ignore": true
   },
   {
-    "__docId__": 199,
+    "__docId__": 202,
     "kind": "method",
     "name": "deleta",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3683,7 +3749,7 @@
     "ignore": true
   },
   {
-    "__docId__": 200,
+    "__docId__": 203,
     "kind": "method",
     "name": "buscaPorId",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3711,7 +3777,7 @@
     "ignore": true
   },
   {
-    "__docId__": 201,
+    "__docId__": 204,
     "kind": "method",
     "name": "buscaPorEmail",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3739,7 +3805,7 @@
     "ignore": true
   },
   {
-    "__docId__": 202,
+    "__docId__": 205,
     "kind": "method",
     "name": "lista",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3760,7 +3826,7 @@
     "ignore": true
   },
   {
-    "__docId__": 203,
+    "__docId__": 206,
     "kind": "method",
     "name": "gerarSenhaHash",
     "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
@@ -3788,7 +3854,7 @@
     "ignore": true
   },
   {
-    "__docId__": 204,
+    "__docId__": 207,
     "kind": "file",
     "name": "src/usuarios/usuarios-rotas.js",
     "content": "const usuariosControlador = require('./usuarios-controlador')\nconst middlewaresAutenticacao = require('./middlewares-autenticacao')\nconst middlewareAutorizacao = require('../middleware-autorizacao')\n\nmodule.exports = app => {\n  app\n    .route('/usuario/atualiza_token')\n    .post(middlewaresAutenticacao.refresh, usuariosControlador.login)\n\n  app\n    .route('/usuario/login')\n    .post(middlewaresAutenticacao.local, usuariosControlador.login)\n\n  app\n    .route('/usuario/logout')\n    .post(\n      [middlewaresAutenticacao.refresh, middlewaresAutenticacao.bearer],\n      usuariosControlador.logout\n    )\n\n  app\n    .route('/usuario/verifica_email/:token')\n    .get(\n      middlewaresAutenticacao.verificacaoEmail,\n      usuariosControlador.verificaEmail\n    )\n\n  app\n    .route('/usuario')\n    .post(usuariosControlador.adiciona)\n    .get(\n      [middlewaresAutenticacao.bearer, middlewareAutorizacao('admin')],\n      usuariosControlador.lista\n    )\n\n  app\n    .route('/usuario/:id')\n    .delete(\n      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local, middlewareAutorizacao('admin')],\n      usuariosControlador.deleta\n    )\n}\n",
@@ -3799,7 +3865,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 205,
+    "__docId__": 208,
     "kind": "variable",
     "name": "usuariosControlador",
     "memberof": "src/usuarios/usuarios-rotas.js",
@@ -3820,7 +3886,7 @@
     "ignore": true
   },
   {
-    "__docId__": 206,
+    "__docId__": 209,
     "kind": "variable",
     "name": "middlewaresAutenticacao",
     "memberof": "src/usuarios/usuarios-rotas.js",
@@ -3841,7 +3907,7 @@
     "ignore": true
   },
   {
-    "__docId__": 207,
+    "__docId__": 210,
     "kind": "variable",
     "name": "middlewareAutorizacao",
     "memberof": "src/usuarios/usuarios-rotas.js",
@@ -3862,7 +3928,7 @@
     "ignore": true
   },
   {
-    "__docId__": 208,
+    "__docId__": 211,
     "kind": "file",
     "name": "src/validacoes-comuns.js",
     "content": "const { InvalidArgumentError } = require('./erros')\n\nmodule.exports = {\n  campoStringNaoNulo (valor, nome) {\n    if (typeof valor !== 'string' || valor === 0) { throw new InvalidArgumentError(`É necessário preencher o campo ${nome}!`) }\n  },\n\n  campoTamanhoMinimo (valor, nome, minimo) {\n    if (valor.length < minimo) {\n      throw new InvalidArgumentError(\n        `O campo ${nome} precisa ser maior que ${minimo} caracteres!`\n      )\n    }\n  },\n\n  campoTamanhoMaximo (valor, nome, maximo) {\n    if (valor.length > maximo) {\n      throw new InvalidArgumentError(\n        `O campo ${nome} precisa ser menor que ${maximo} caracteres!`\n      )\n    }\n  }\n}\n",
@@ -3873,7 +3939,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 209,
+    "__docId__": 212,
     "kind": "variable",
     "name": "InvalidArgumentError",
     "memberof": "src/validacoes-comuns.js",

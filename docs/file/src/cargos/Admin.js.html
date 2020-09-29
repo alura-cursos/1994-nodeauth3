@@ -54,12 +54,12 @@ class Admin extends Cargo {
   constructor () {
     super()
     /**
-     * @type {string} [cargo=&apos;admin&apos;] - tem o cargo de administrador
+     * @type {string} cargo - tem o cargo de administrador
      */
     this.cargo = cargos.ADMIN
 
     /**
-     * @type {string[]} USUARIOS=[&apos;ler&apos;, &apos;escrever&apos;, &apos;atualizar&apos;, &apos;remover&apos;] - tem as permiss&#xF5;es de ler, escrever, atualizar e remover usu&#xE1;rios
+     * @type {string[]} USUARIOS - tem as permiss&#xF5;es de ler, escrever, atualizar e remover usu&#xE1;rios
      */
     this[entidades.USUARIOS] = [
       acoes.LER,
@@ -69,7 +69,7 @@ class Admin extends Cargo {
     ]
 
     /**
-     * @type {string[&apos;ler&apos;, &apos;escrever&apos;, &apos;atualizar&apos;, &apos;remover&apos;]} POSTS - tem as permiss&#xF5;es de ler, escrever, atualizar e remover posts
+     * @type {string[]} POSTS - tem as permiss&#xF5;es de ler, escrever, atualizar e remover posts
      */
     this[entidades.POSTS] = [
       acoes.LER,

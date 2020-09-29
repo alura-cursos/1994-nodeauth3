@@ -372,6 +372,24 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/cargos/cargo.js~cargo#obtercargo",
+    "class/src/cargos/Cargo.js~Cargo.html#instance-method-obterCargo",
+    "src/cargos/Cargo.js~Cargo#obterCargo",
+    "method"
+  ],
+  [
+    "src/cargos/cargo.js~cargo#obterpermissoesposts",
+    "class/src/cargos/Cargo.js~Cargo.html#instance-method-obterPermissoesPosts",
+    "src/cargos/Cargo.js~Cargo#obterPermissoesPosts",
+    "method"
+  ],
+  [
+    "src/cargos/cargo.js~cargo#obterpermissoesusuarios",
+    "class/src/cargos/Cargo.js~Cargo.html#instance-method-obterPermissoesUsuarios",
+    "src/cargos/Cargo.js~Cargo#obterPermissoesUsuarios",
+    "method"
+  ],
+  [
     "src/cargos/editor.js",
     "file/src/cargos/Editor.js.html",
     "src/cargos/Editor.js",

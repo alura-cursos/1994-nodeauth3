@@ -66,6 +66,33 @@ class Cargo {
      */
     this[entidades.POSTS] = []
   }
+
+  /**
+   * obterCargo - retorna o cargo definido
+   *
+   * @return {string} LEITOR - cargo padr&#xE3;o
+   */
+  obterCargo () {
+    return this.cargo
+  }
+
+  /**
+   * obterPermissoesUsuarios - retorna as permiss&#xF5;es definidas para os usu&#xE1;rios
+   *
+   * @return {string[]} [] - nenhuma permiss&#xE3;o &#xE9; dada por padr&#xE3;o
+   */
+  obterPermissoesUsuarios () {
+    return this[entidades.USUARIOS]
+  }
+
+  /**
+   * obterPermissoesPosts - retorna as permiss&#xF5;es definidas para os posts
+   *
+   * @return {string[]} [] - nenhuma permiss&#xE3;o &#xE9; dada por padr&#xE3;o
+   */
+  obterPermissoesPosts () {
+    return this[entidades.POSTS]
+  }
 }
 
 module.exports = Cargo

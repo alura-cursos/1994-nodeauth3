@@ -43,42 +43,42 @@
  * acoes - defini&#xE7;&#xE3;o de quais a&#xE7;&#xF5;es podem ser executadas sobre cada entidade
  *
  * @property {Object} acoes - todas as entidades da aplica&#xE7;&#xE3;o
- * @property {string} acoes.LER - ler, obter informa&#xE7;&#xF5;es da entidade
- * @property {string} acoes.ESCREVER - criar, inserir novas informa&#xE7;&#xF5;es na tabela
- * @property {string} acoes.ATUALIZAR - autalizar, mudar informa&#xE7;&#xF5;es de um determinado documento
- * @property {string} acoes.REMOVER - remover, apagar um determinado documento da aplica&#xE7;&#xE3;o
+ * @property {Symbol} acoes.LER - ler, obter informa&#xE7;&#xF5;es da entidade
+ * @property {Symbol} acoes.ESCREVER - criar, inserir novas informa&#xE7;&#xF5;es na tabela
+ * @property {Symbol} acoes.ATUALIZAR - autalizar, mudar informa&#xE7;&#xF5;es de um determinado documento
+ * @property {Symbol} acoes.REMOVER - remover, apagar um determinado documento da aplica&#xE7;&#xE3;o
  */
 const acoes = {
-  LER: &apos;ler&apos;,
-  ESCREVER: &apos;escrever&apos;,
-  ATUALIZAR: &apos;atualizar&apos;,
-  REMOVER: &apos;remover&apos;
+  LER: Symbol(&apos;ler&apos;),
+  ESCREVER: Symbol(&apos;escrever&apos;),
+  ATUALIZAR: Symbol(&apos;atualizar&apos;),
+  REMOVER: Symbol(&apos;remover&apos;)
 }
 
 /**
  * entidades - defini&#xE7;&#xE3;o de quais entidades fazem parte da aplica&#xE7;&#xE3;o e do controle de acesso
  *
  * @property {Object} entidades - todas as entidades da aplica&#xE7;&#xE3;o
- * @property {string} entidades.USUARIOS - usu&#xE1;rios
- * @property {string} entidades.POSTS - artigos/posts
+ * @property {Symbol} entidades.USUARIOS - usu&#xE1;rios
+ * @property {Symbol} entidades.POSTS - artigos/posts
  */
 const entidades = {
-  USUARIOS: &apos;usuarios&apos;,
-  POSTS: &apos;posts&apos;
+  USUARIOS: Symbol(&apos;usuarios&apos;),
+  POSTS: Symbol(&apos;posts&apos;)
 }
 
 /**
  * cargos - defini&#xE7;&#xE3;o de quais cargos a aplica&#xE7;&#xE3;o possui
  *
  * @property {Object} cargos - todos os cargos dispon&#xED;veis
- * @property {string} cargos.ADMIN - cargo de administrador
- * @property {string} cargos.EDITOR - cargo de editor de posts
- * @property {string} cargos.LEITOR - cargo de leitor de posts
+ * @property {Symbol} cargos.ADMIN - cargo de administrador
+ * @property {Symbol} cargos.EDITOR - cargo de editor de posts
+ * @property {Symbol} cargos.LEITOR - cargo de leitor de posts
  */
 const cargos = {
-  ADMIN: &apos;admin&apos;,
-  EDITOR: &apos;editor&apos;,
-  LEITOR: &apos;leitor&apos;
+  ADMIN: Symbol(&apos;admin&apos;),
+  EDITOR: Symbol(&apos;editor&apos;),
+  LEITOR: Symbol(&apos;leitor&apos;)
 }
 
 module.exports = {
