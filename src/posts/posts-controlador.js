@@ -1,9 +1,17 @@
 const Post = require('./posts-modelo')
 const { InvalidArgumentError } = require('../erros')
+const controle = require('../controle-de-acesso')
 
 module.exports = {
   async adiciona (req, res) {
     try {
+      const permissao = controle.can(req.user.cargo).createOwn('post')
+
+      if (permissao.granted === false) {
+        res.status(403)
+        res.end()
+        return
+      }
       req.body.autor = req.user.id
       const post = new Post(req.body)
       await post.adiciona()
@@ -20,11 +28,21 @@ module.exports = {
   async lista (req, res) {
     try {
       let posts
+      const podeLerQualquerPost = controle.can(req.user.cargo).readAny('post').granted
+      const podeLerSeuPost = controle.can(req.user.cargo).readOwn('post').granted
 
-      if (req.user.cargo === 'admin') {
+      if (podeLerQualquerPost) {
         posts = await Post.listarTodos()
-      } else {
+      }
+
+      if (podeLerSeuPost) {
         posts = await Post.listarPorAutor(req.user.id)
+      }
+
+      if (!podeLerQualquerPost && !podeLerSeuPost) {
+        res.status(403)
+        res.end()
+        return
       }
 
       res.json(posts)
@@ -36,11 +54,21 @@ module.exports = {
   async obterDetalhes (req, res) {
     try {
       let post
+      const podeLerQualquerPost = controle.can(req.user.cargo).readAny('post').granted
+      const podeLerSeuPost = controle.can(req.user.cargo).readOwn('post').granted
 
-      if (req.user.cargo === 'admin') {
+      if (podeLerQualquerPost) {
         post = await Post.buscaPorId(req.params.id)
-      } else {
+      }
+
+      if (podeLerSeuPost) {
         post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
+      }
+
+      if (!podeLerQualquerPost && !podeLerSeuPost) {
+        res.status(403)
+        res.end()
+        return
       }
 
       res.json(post)
@@ -52,8 +80,24 @@ module.exports = {
   async remover (req, res) {
     try {
       let post
+      const podeApagarQualquerPost = controle.can(req.user.cargo).deleteAny('post').granted
+      const podeApagarSeuPost = controle.can(req.user.cargo).deleteOwn('post').granted
 
-      if (req.user.cargo === 'admin') {
+      if (podeApagarQualquerPost) {
+        post = await Post.buscaPorId(req.params.id)
+      }
+
+      if (podeApagarSeuPost) {
+        post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
+      }
+
+      if (!podeApagarQualquerPost && !podeApagarSeuPost) {
+        res.status(403)
+        res.end()
+        return
+      }
+
+      if (controle.can(req.user.cargo).deleteAny('post').granted) {
         post = await Post.buscaPorId(req.params.id)
       } else {
         post = await Post.buscaPorIdAutor(req.params.id, req.user.id)

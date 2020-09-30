@@ -35,7 +35,7 @@ class Usuario {
   valida () {
     validacoes.campoStringNaoNulo(this.nome, 'nome')
     validacoes.campoStringNaoNulo(this.email, 'email')
-    const cargos = ['admin', 'editor']
+    const cargos = ['admin', 'editor', 'leitor']
 
     if (cargos.indexOf(this.cargo) === -1) {
       throw new InvalidArgumentError(`Cargo inválido. Valores aceitos são: ${cargos.join(', ')}`)

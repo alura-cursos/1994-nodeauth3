@@ -29,14 +29,14 @@ module.exports = app => {
     .route('/usuario')
     .post(usuariosControlador.adiciona)
     .get(
-      [middlewaresAutenticacao.bearer, middlewareAutorizacao('admin')],
+      [middlewaresAutenticacao.bearer, middlewareAutorizacao('usuario', 'readAny')],
       usuariosControlador.lista
     )
 
   app
     .route('/usuario/:id')
     .delete(
-      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local, middlewareAutorizacao('admin')],
+      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local, middlewareAutorizacao('usuario', 'deleteAny')],
       usuariosControlador.deleta
     )
 }

@@ -1,4 +1,5 @@
 const postsControlador = require('./posts-controlador')
+const middlewareAutorizacao = require('../middleware-autorizacao')
 const { middlewaresAutenticacao } = require('../usuarios')
 
 module.exports = app => {
