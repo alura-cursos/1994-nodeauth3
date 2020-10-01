@@ -29,15 +29,7 @@ module.exports = {
 
   async obterDetalhes (req, res) {
     try {
-      let post
-
-      if (req.acesso.todos) {
-        post = await Post.buscaPorId(req.params.id)
-      }
-
-      if (req.acesso.apenasSeu) {
-        post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
-      }
+      const post = await Post.buscaPorId(req.params.id)
 
       if (post === null) {
         res.status(404)

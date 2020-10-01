@@ -60,6 +60,12 @@ module.exports = {
 
   async lista (req, res) {
     try {
+      if (!req.acesso.todos) {
+        res.status(403)
+        res.end()
+        return
+      }
+
       const usuarios = await Usuario.lista()
       res.json(usuarios)
     } catch (erro) {
