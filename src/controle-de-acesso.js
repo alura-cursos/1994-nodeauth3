@@ -7,7 +7,7 @@ controle
 
   .grant('editor')
   .extend('leitor')
-  .readOwn('post')
+  .readAny('post')
   .updateOwn('post')
   .createOwn('post')
   .deleteOwn('post')

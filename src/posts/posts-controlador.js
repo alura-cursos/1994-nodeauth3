@@ -20,24 +20,7 @@ module.exports = {
 
   async lista (req, res) {
     try {
-      let posts
-      const podeLerQualquerPost = controle.can(req.user.cargo).readAny('post').granted
-      const podeLerSeuPost = controle.can(req.user.cargo).readOwn('post').granted
-
-      if (podeLerQualquerPost) {
-        posts = await Post.listarTodos()
-      }
-
-      if (podeLerSeuPost) {
-        posts = await Post.listarPorAutor(req.user.id)
-      }
-
-      if (!podeLerQualquerPost && !podeLerSeuPost) {
-        res.status(403)
-        res.end()
-        return
-      }
-
+      const posts = await Post.listarTodos()
       res.json(posts)
     } catch (erro) {
       return res.status(500).json({ erro: erro.message })

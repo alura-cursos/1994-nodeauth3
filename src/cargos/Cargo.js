@@ -1,4 +1,4 @@
-const { entidades, cargos } = require('./permissoes')
+const { entidades, cargos, acoes } = require('./permissoes')
 
 /**
  * Cargo - definição base dos cargos da aplicação
@@ -23,7 +23,7 @@ class Cargo {
     /**
      * @property {string[]} POSTS - as possíveis permissões que o cargo pode ter em relação aos usuários
      */
-    this[entidades.POSTS] = []
+    this[entidades.POSTS] = [acoes.LER]
   }
 
   /**

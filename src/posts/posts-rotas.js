@@ -5,10 +5,7 @@ const { middlewaresAutenticacao } = require('../usuarios')
 module.exports = app => {
   app
     .route('/post')
-    .get(
-      middlewaresAutenticacao.bearer,
-      postsControlador.lista
-    )
+    .get(postsControlador.lista)
     .post(
       [middlewaresAutenticacao.bearer, middlewareAutorizacao('post', 'createOwn')],
       postsControlador.adiciona
