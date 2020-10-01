@@ -10,7 +10,7 @@ module.exports = app => {
       postsControlador.lista
     )
     .post(
-      middlewaresAutenticacao.bearer,
+      [middlewaresAutenticacao.bearer, middlewareAutorizacao('post', 'createOwn')],
       postsControlador.adiciona
     )
 

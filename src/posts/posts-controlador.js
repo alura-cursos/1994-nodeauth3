@@ -5,13 +5,6 @@ const controle = require('../controle-de-acesso')
 module.exports = {
   async adiciona (req, res) {
     try {
-      const permissao = controle.can(req.user.cargo).createOwn('post')
-
-      if (permissao.granted === false) {
-        res.status(403)
-        res.end()
-        return
-      }
       req.body.autor = req.user.id
       const post = new Post(req.body)
       await post.adiciona()
@@ -71,6 +64,11 @@ module.exports = {
         return
       }
 
+      if (post === null) {
+        res.status(404)
+        res.end()
+      }
+
       res.json(post)
     } catch (erro) {
       return res.status(500).json({ erro: erro.message })
@@ -95,12 +93,6 @@ module.exports = {
         res.status(403)
         res.end()
         return
-      }
-
-      if (controle.can(req.user.cargo).deleteAny('post').granted) {
-        post = await Post.buscaPorId(req.params.id)
-      } else {
-        post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
       }
 
       if (post === null) {
