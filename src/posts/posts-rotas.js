@@ -7,17 +7,14 @@ module.exports = app => {
     .route('/post')
     .get(postsControlador.lista)
     .post(
-      [middlewaresAutenticacao.bearer, middlewareAutorizacao('post', 'createOwn')],
+      [middlewaresAutenticacao.bearer, middlewareAutorizacao('post', 'criar')],
       postsControlador.adiciona
     )
 
   app.route('/post/:id')
-    .get(
-      middlewaresAutenticacao.bearer,
-      postsControlador.obterDetalhes
-    )
+    .get(postsControlador.obterDetalhes)
     .delete(
-      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local],
+      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local, middlewareAutorizacao('post', 'remover')],
       postsControlador.remover
     )
 }

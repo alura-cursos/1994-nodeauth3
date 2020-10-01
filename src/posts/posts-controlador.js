@@ -30,26 +30,19 @@ module.exports = {
   async obterDetalhes (req, res) {
     try {
       let post
-      const podeLerQualquerPost = controle.can(req.user.cargo).readAny('post').granted
-      const podeLerSeuPost = controle.can(req.user.cargo).readOwn('post').granted
 
-      if (podeLerQualquerPost) {
+      if (req.acesso.todos) {
         post = await Post.buscaPorId(req.params.id)
       }
 
-      if (podeLerSeuPost) {
+      if (req.acesso.apenasSeu) {
         post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
-      }
-
-      if (!podeLerQualquerPost && !podeLerSeuPost) {
-        res.status(403)
-        res.end()
-        return
       }
 
       if (post === null) {
         res.status(404)
         res.end()
+        return
       }
 
       res.json(post)
@@ -61,26 +54,19 @@ module.exports = {
   async remover (req, res) {
     try {
       let post
-      const podeApagarQualquerPost = controle.can(req.user.cargo).deleteAny('post').granted
-      const podeApagarSeuPost = controle.can(req.user.cargo).deleteOwn('post').granted
 
-      if (podeApagarQualquerPost) {
+      if (req.acesso.todos) {
         post = await Post.buscaPorId(req.params.id)
       }
 
-      if (podeApagarSeuPost) {
+      if (req.acesso.todos) {
         post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
-      }
-
-      if (!podeApagarQualquerPost && !podeApagarSeuPost) {
-        res.status(403)
-        res.end()
-        return
       }
 
       if (post === null) {
         res.status(404)
         res.end()
+        return
       }
 
       post.remover()
