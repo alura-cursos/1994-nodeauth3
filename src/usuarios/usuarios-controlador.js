@@ -1,8 +1,8 @@
 const Usuario = require('./usuarios-modelo')
-const { InvalidArgumentError } = require('../erros')
 
 const tokens = require('./tokens')
 const { EmailVerificacao } = require('./emails')
+const { PermissaoNegada } = require('../erros')
 
 function geraEndereco (rota, token) {
   const baseURL = process.env.BASE_URL
@@ -10,7 +10,7 @@ function geraEndereco (rota, token) {
 }
 
 module.exports = {
-  async adiciona (req, res) {
+  async adiciona (req, res, proximo) {
     const { nome, email, senha, cargo } = req.body
 
     try {
@@ -26,75 +26,69 @@ module.exports = {
       const token = tokens.verificacaoEmail.cria(usuario.id)
       const endereco = geraEndereco('/usuario/verifica_email/', token)
       const emailVerificacao = new EmailVerificacao(usuario, endereco)
-      emailVerificacao.enviaEmail().catch(console.log)
+      await emailVerificacao.enviaEmail()
 
       res.status(201).json()
     } catch (erro) {
-      if (erro instanceof InvalidArgumentError) {
-        return res.status(400).json({ erro: erro.message })
-      }
-      res.status(500).json({ erro: erro.message })
+      proximo(erro)
     }
   },
 
-  async login (req, res) {
+  async login (req, res, proximo) {
     try {
       const accessToken = tokens.access.cria(req.user.id)
       const refreshToken = await tokens.refresh.cria(req.user.id)
       res.set('Authorization', accessToken)
       res.status(200).json({ refreshToken })
     } catch (erro) {
-      res.status(500).json({ erro: erro.message })
+      proximo(erro)
     }
   },
 
-  async logout (req, res) {
+  async logout (req, res, proximo) {
     try {
       const token = req.token
       await tokens.access.invalida(token)
       res.status(204).json()
     } catch (erro) {
-      res.status(500).json({ erro: erro.message })
+      proximo(erro)
     }
   },
 
-  async lista (req, res) {
+  async lista (req, res, proximo) {
     try {
       if (!req.acesso.todos) {
-        res.status(403)
-        res.end()
-        return
+        throw new PermissaoNegada()
       }
 
       const usuarios = await Usuario.lista()
       res.json(usuarios)
     } catch (erro) {
-      res.status(500).json({ erro: erro.message })
+      proximo(erro)
     }
   },
 
-  async verificaEmail (req, res) {
+  async verificaEmail (req, res, proximo) {
     try {
       const usuario = req.user
       await usuario.verificaEmail()
       res.status(200).json()
     } catch (erro) {
-      res.status(500).json({ erro: erro.message })
+      proximo(erro)
     }
   },
 
-  async deleta (req, res) {
+  async deleta (req, res, proximo) {
     try {
       if (!req.acesso.todos) {
-        res.status(403)
-        res.end()
-        return
+        throw new PermissaoNegada()
       }
+
       const usuario = await Usuario.buscaPorId(req.params.id)
       await usuario.deleta()
       res.status(200).json()
     } catch (erro) {
-      res.status(500).json({ erro: erro })
+      proximo(erro)
     }
   }
 }

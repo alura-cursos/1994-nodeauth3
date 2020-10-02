@@ -29,18 +29,14 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cargos">cargos</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Admin.js~Admin.html">Admin</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Editor.js~Editor.html">Editor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Leitor.js~Leitor.html">Leitor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/cargos/Cargo.js~Cargo.html">Cargo</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-acoes">acoes</a></span></span></li>
-</ul>
+  </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/posts/posts-controlador.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const Post = require(&apos;./posts-modelo&apos;)
 const { InvalidArgumentError } = require(&apos;../erros&apos;)
+const controle = require(&apos;../controle-de-acesso&apos;)
 
 module.exports = {
   async adiciona (req, res) {
@@ -60,14 +56,7 @@ module.exports = {
 
   async lista (req, res) {
     try {
-      let posts
-
-      if (req.user.cargo === &apos;admin&apos;) {
-        posts = await Post.listarTodos()
-      } else {
-        posts = await Post.listarPorAutor(req.user.id)
-      }
-
+      const posts = await Post.listarTodos()
       res.json(posts)
     } catch (erro) {
       return res.status(500).json({ erro: erro.message })
@@ -76,12 +65,12 @@ module.exports = {
 
   async obterDetalhes (req, res) {
     try {
-      let post
+      const post = await Post.buscaPorId(req.params.id)
 
-      if (req.user.cargo === &apos;admin&apos;) {
-        post = await Post.buscaPorId(req.params.id)
-      } else {
-        post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
+      if (post === null) {
+        res.status(404)
+        res.end()
+        return
       }
 
       res.json(post)
@@ -94,15 +83,18 @@ module.exports = {
     try {
       let post
 
-      if (req.user.cargo === &apos;admin&apos;) {
+      if (req.acesso.todos) {
         post = await Post.buscaPorId(req.params.id)
-      } else {
+      }
+
+      if (req.acesso.todos) {
         post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
       }
 
       if (post === null) {
         res.status(404)
         res.end()
+        return
       }
 
       post.remover()

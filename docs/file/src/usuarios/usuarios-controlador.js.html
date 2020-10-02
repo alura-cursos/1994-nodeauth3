@@ -29,12 +29,7 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cargos">cargos</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Admin.js~Admin.html">Admin</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Editor.js~Editor.html">Editor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Leitor.js~Leitor.html">Leitor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/cargos/Cargo.js~Cargo.html">Cargo</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-acoes">acoes</a></span></span></li>
-</ul>
+  </ul>
 </div>
 </nav>
 
@@ -101,6 +96,12 @@ module.exports = {
 
   async lista (req, res) {
     try {
+      if (!req.acesso.todos) {
+        res.status(403)
+        res.end()
+        return
+      }
+
       const usuarios = await Usuario.lista()
       res.json(usuarios)
     } catch (erro) {
@@ -120,6 +121,11 @@ module.exports = {
 
   async deleta (req, res) {
     try {
+      if (!req.acesso.todos) {
+        res.status(403)
+        res.end()
+        return
+      }
       const usuario = await Usuario.buscaPorId(req.params.id)
       await usuario.deleta()
       res.status(200).json()

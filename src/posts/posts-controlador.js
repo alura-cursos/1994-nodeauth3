@@ -1,9 +1,8 @@
 const Post = require('./posts-modelo')
-const { InvalidArgumentError } = require('../erros')
 const controle = require('../controle-de-acesso')
 
 module.exports = {
-  async adiciona (req, res) {
+  async adiciona (req, res, proximo) {
     try {
       req.body.autor = req.user.id
       const post = new Post(req.body)
@@ -11,39 +10,29 @@ module.exports = {
 
       res.status(201).json(post)
     } catch (erro) {
-      if (erro instanceof InvalidArgumentError) {
-        return res.status(400).json({ erro: erro.message })
-      }
-      res.status(500).json({ erro: erro.message })
+      proximo(erro)
     }
   },
 
-  async lista (req, res) {
+  async lista (req, res, proximo) {
     try {
       const posts = await Post.listarTodos()
       res.json(posts)
     } catch (erro) {
-      return res.status(500).json({ erro: erro.message })
+      proximo(erro)
     }
   },
 
-  async obterDetalhes (req, res) {
+  async obterDetalhes (req, res, proximo) {
     try {
       const post = await Post.buscaPorId(req.params.id)
-
-      if (post === null) {
-        res.status(404)
-        res.end()
-        return
-      }
-
       res.json(post)
     } catch (erro) {
-      return res.status(500).json({ erro: erro.message })
+      proximo(erro)
     }
   },
 
-  async remover (req, res) {
+  async remover (req, res, proximo) {
     try {
       let post
 
@@ -55,17 +44,11 @@ module.exports = {
         post = await Post.buscaPorIdAutor(req.params.id, req.user.id)
       }
 
-      if (post === null) {
-        res.status(404)
-        res.end()
-        return
-      }
-
       post.remover()
       res.status(204)
       res.end()
     } catch (erro) {
-      return res.status(500).json({ erro: erro.message })
+      proximo(erro)
     }
   }
 }

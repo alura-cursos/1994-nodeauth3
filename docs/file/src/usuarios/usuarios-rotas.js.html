@@ -29,12 +29,7 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cargos">cargos</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Admin.js~Admin.html">Admin</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Editor.js~Editor.html">Editor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Leitor.js~Leitor.html">Leitor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/cargos/Cargo.js~Cargo.html">Cargo</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-acoes">acoes</a></span></span></li>
-</ul>
+  </ul>
 </div>
 </nav>
 
@@ -70,14 +65,14 @@ module.exports = app =&gt; {
     .route(&apos;/usuario&apos;)
     .post(usuariosControlador.adiciona)
     .get(
-      [middlewaresAutenticacao.bearer, middlewareAutorizacao(&apos;admin&apos;)],
+      [middlewaresAutenticacao.bearer, middlewareAutorizacao(&apos;usuario&apos;, &apos;ler&apos;)],
       usuariosControlador.lista
     )
 
   app
     .route(&apos;/usuario/:id&apos;)
     .delete(
-      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local, middlewareAutorizacao(&apos;admin&apos;)],
+      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local, middlewareAutorizacao(&apos;usuario&apos;, &apos;remover&apos;)],
       usuariosControlador.deleta
     )
 }

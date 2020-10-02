@@ -29,12 +29,7 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cargos">cargos</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Admin.js~Admin.html">Admin</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Editor.js~Editor.html">Editor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Leitor.js~Leitor.html">Leitor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/cargos/Cargo.js~Cargo.html">Cargo</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-acoes">acoes</a></span></span></li>
-</ul>
+  </ul>
 </div>
 </nav>
 
@@ -76,7 +71,7 @@ class Usuario {
   valida () {
     validacoes.campoStringNaoNulo(this.nome, &apos;nome&apos;)
     validacoes.campoStringNaoNulo(this.email, &apos;email&apos;)
-    const cargos = [&apos;admin&apos;, &apos;editor&apos;]
+    const cargos = [&apos;admin&apos;, &apos;editor&apos;, &apos;leitor&apos;]
 
     if (cargos.indexOf(this.cargo) === -1) {
       throw new InvalidArgumentError(`Cargo inv&#xE1;lido. Valores aceitos s&#xE3;o: ${cargos.join(&apos;, &apos;)}`)

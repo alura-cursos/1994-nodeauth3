@@ -29,38 +29,28 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cargos">cargos</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Admin.js~Admin.html">Admin</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Editor.js~Editor.html">Editor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Leitor.js~Leitor.html">Leitor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/cargos/Cargo.js~Cargo.html">Cargo</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-acoes">acoes</a></span></span></li>
-</ul>
+  </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/posts/posts-rotas.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const postsControlador = require(&apos;./posts-controlador&apos;)
+const middlewareAutorizacao = require(&apos;../middleware-autorizacao&apos;)
 const { middlewaresAutenticacao } = require(&apos;../usuarios&apos;)
 
 module.exports = app =&gt; {
   app
     .route(&apos;/post&apos;)
-    .get(
-      middlewaresAutenticacao.bearer,
-      postsControlador.lista
-    )
+    .get(postsControlador.lista)
     .post(
-      middlewaresAutenticacao.bearer,
+      [middlewaresAutenticacao.bearer, middlewareAutorizacao(&apos;post&apos;, &apos;escrever&apos;)],
       postsControlador.adiciona
     )
 
   app.route(&apos;/post/:id&apos;)
-    .get(
-      middlewaresAutenticacao.bearer,
-      postsControlador.obterDetalhes
-    )
+    .get(postsControlador.obterDetalhes)
     .delete(
-      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local],
+      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local, middlewareAutorizacao(&apos;post&apos;, &apos;remover&apos;)],
       postsControlador.remover
     )
 }

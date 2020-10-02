@@ -1,5 +1,6 @@
 const postsDao = require('./posts-dao')
 const validacoes = require('../validacoes-comuns')
+const { NaoEncontrado } = require('../erros')
 
 class Post {
   constructor (post) {
@@ -18,7 +19,7 @@ class Post {
     const post = await postsDao.buscaPorId(id)
 
     if (!post) {
-      return null
+      throw new NaoEncontrado()
     }
 
     return new Post(post)
@@ -26,8 +27,9 @@ class Post {
 
   static async buscaPorIdAutor (id, idAutor) {
     const post = await postsDao.buscaPorId(id, idAutor)
+
     if (!post) {
-      return null
+      throw new NaoEncontrado()
     }
 
     return new Post(post)

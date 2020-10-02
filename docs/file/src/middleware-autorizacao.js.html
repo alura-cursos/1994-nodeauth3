@@ -29,25 +29,38 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cargos">cargos</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Admin.js~Admin.html">Admin</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Editor.js~Editor.html">Editor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/cargos/Leitor.js~Leitor.html">Leitor</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-interface">I</span><span data-ice="name"><span><a href="class/src/cargos/Cargo.js~Cargo.html">Cargo</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-acoes">acoes</a></span></span></li>
-</ul>
+  </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/middleware-autorizacao.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">module.exports = (cargoObrigatorio = &apos;admin&apos;) =&gt; (req, res, proximo) =&gt; {
-  const cargoAtual = req.user.cargo
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const controle = require(&apos;./controle-de-acesso&apos;)
 
-  if (cargoAtual !== cargoObrigatorio) {
+const acoes = {
+  ler: { todos: &apos;readAny&apos;, apenasSeu: &apos;readOwn&apos; },
+  escrever: { todos: &apos;createAny&apos;, apenasSeu: &apos;createOwn&apos; },
+  atualizar: { todos: &apos;updateAny&apos;, apenasSeu: &apos;updateOwn&apos; },
+  remover: { todos: &apos;deleteAny&apos;, apenasSeu: &apos;deleteOwn&apos; }
+}
+
+module.exports = (entidade, acao) =&gt; (req, res, proximo) =&gt; {
+  const pode = controle.can(req.user.cargo)
+  const metodosDoControle = acoes[acao]
+  const podeTodos = pode[metodosDoControle.todos](entidade)
+  const podeApenasSeu = pode[metodosDoControle.apenasSeu](entidade)
+
+  if (!podeTodos.granted &amp;&amp; !podeApenasSeu.granted) {
     res.status(403)
     res.end()
-  } else {
-    proximo()
+    return
   }
+
+  req.acesso = {
+    todos: podeTodos.granted,
+    apenasSeu: podeApenasSeu.granted
+  }
+
+  proximo()
 }
 </code></pre>
 
