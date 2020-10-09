@@ -36,7 +36,7 @@ class Post {
   }
 
   static listarPorAutor (idAutor) {
-    return postsDao.listaPorAutor(idAutor)
+    return postsDao.listarPorAutor(idAutor)
   }
 
   static listarTodos () {

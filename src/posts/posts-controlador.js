@@ -19,13 +19,7 @@ module.exports = {
 
   async lista (req, res) {
     try {
-      let posts
-
-      if (req.user.cargo === 'admin') {
-        posts = await Post.listarTodos()
-      } else {
-        posts = await Post.listarPorAutor(req.user.id)
-      }
+      const posts = await Post.listarPorAutor(req.user.id)
 
       res.json(posts)
     } catch (erro) {

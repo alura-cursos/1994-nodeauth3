@@ -19,7 +19,7 @@ module.exports = {
     }
   },
 
-  async listaPorAutor (idAutor) {
+  async listarPorAutor (idAutor) {
     try {
       return await dbAll('SELECT id, titulo FROM posts WHERE autor = ?', [idAutor])
     } catch (erro) {
@@ -27,7 +27,7 @@ module.exports = {
     }
   },
 
-  async listaTodos () {
+  async listarTodos () {
     try {
       return await dbAll('SELECT id, titulo FROM posts')
     } catch (erro) {
