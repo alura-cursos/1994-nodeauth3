@@ -10,6 +10,7 @@ class Usuario {
     this.email = usuario.email
     this.senhaHash = usuario.senhaHash
     this.emailVerificado = usuario.emailVerificado
+    this.cargo = usuario.cargo
     this.valida()
   }
 
@@ -34,6 +35,11 @@ class Usuario {
   valida () {
     validacoes.campoStringNaoNulo(this.nome, 'nome')
     validacoes.campoStringNaoNulo(this.email, 'email')
+    const cargosValidos = ['admin', 'editor', 'assinante']
+
+    if (cargosValidos.indexOf(this.cargo) === -1) {
+      throw new InvalidArgumentError('O campo cargo está inválido')
+    }
   }
 
   async verificaEmail () {

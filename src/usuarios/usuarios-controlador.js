@@ -11,13 +11,14 @@ function geraEndereco (rota, token) {
 
 module.exports = {
   async adiciona (req, res) {
-    const { nome, email, senha } = req.body
+    const { nome, email, senha, cargo } = req.body
 
     try {
       const usuario = new Usuario({
         nome,
         email,
-        emailVerificado: false
+        emailVerificado: false,
+        cargo
       })
       await usuario.adicionaSenha(senha)
       await usuario.adiciona()
