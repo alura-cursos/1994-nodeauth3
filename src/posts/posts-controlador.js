@@ -19,7 +19,11 @@ module.exports = {
 
   async lista (req, res) {
     try {
-      const posts = await Post.listarPorAutor(req.user.id)
+      let posts = await Post.listarTodos()
+
+      if (!req.estaAutenticado) {
+        posts = posts.map(post => ({ titulo: post.titulo, conteudo: post.conteudo }))
+      }
 
       res.json(posts)
     } catch (erro) {

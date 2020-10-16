@@ -29,7 +29,7 @@ module.exports = {
 
   async listarTodos () {
     try {
-      return await dbAll('SELECT id, titulo FROM posts')
+      return await dbAll('SELECT id, titulo, conteudo, autor FROM posts')
     } catch (erro) {
       throw new InternalServerError('Erro ao listar os posts!')
     }
