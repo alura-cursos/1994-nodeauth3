@@ -37,7 +37,16 @@ module.exports = {
 
   async buscaPorId (id, idAutor) {
     try {
-      return await dbGet('SELECT * FROM posts WHERE id = ? AND autor = ?', [id, idAutor])
+      let instrucoes = 'SELECT * FROM posts WHERE id = ?'
+      const parametros = [id]
+
+      idAutor = Number(idAutor)
+      if (isNaN(idAutor) === false) {
+        instrucoes = `${instrucoes} AND autor = ?`
+        parametros.push(idAutor)
+      }
+
+      return await dbGet(instrucoes, parametros)
     } catch (erro) {
       throw new InternalServerError('Não foi possível encontrar o post!')
     }

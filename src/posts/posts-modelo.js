@@ -14,8 +14,18 @@ class Post {
     return postsDao.adiciona(this)
   }
 
-  static async buscaPorId (id, idAutor) {
+  static async buscaPorId (id) {
+    const post = await postsDao.buscaPorId(id)
+    if (!post) {
+      return null
+    }
+
+    return new Post(post)
+  }
+
+  static async buscaPorIdAutor (id, idAutor) {
     const post = await postsDao.buscaPorId(id, idAutor)
+
     if (!post) {
       return null
     }
