@@ -12,4 +12,20 @@ class InternalServerError extends Error {
   }
 }
 
-module.exports = { InvalidArgumentError, InternalServerError }
+class NaoEncontrado extends Error {
+  constructor (entidade) {
+    const mensagem = `Não foi possível encontrar ${entidade}`
+    super(mensagem)
+    this.name = 'NaoEncontrado'
+  }
+}
+
+class NaoAutorizado extends Error {
+  constructor () {
+    const mensagem = 'Não foi possível acessar esse recurso'
+    super(mensagem)
+    this.name = 'NaoAutorizado'
+  }
+}
+
+module.exports = { InvalidArgumentError, InternalServerError, NaoEncontrado, NaoAutorizado }
