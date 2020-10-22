@@ -8,6 +8,14 @@ require('./redis/allowlist-refresh-token')
 const { InvalidArgumentError, NaoEncontrado, NaoAutorizado } = require('./src/erros')
 const jwt = require('jsonwebtoken')
 
+app.use((requisicao, resposta, proximo) => {
+    resposta.set({
+        'Content-Type': 'application/json'
+    })
+
+    proximo()
+})
+
 const routes = require('./rotas')
 routes(app)
 
