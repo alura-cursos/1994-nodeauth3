@@ -15,7 +15,7 @@ class Usuario {
   }
 
   async adiciona () {
-    if (await Usuario.buscaPorEmail(this.email)) {
+    if (await usuariosDao.buscaPorEmail(this.email)) {
       throw new InvalidArgumentError('O usuário já existe!')
     }
 
