@@ -106,5 +106,21 @@ module.exports = {
 
       proximo(erro)
     }
+  },
+
+  async trocarSenha (requisicao, resposta, proximo) {
+    try {
+      if (typeof requisicao.body.token !== 'string' || requisicao.body.token.lenght === 0) {
+        throw new InvalidArgumentError('O token está inválido')
+      }
+
+      const id = await tokens.redefinicaoDeSenha.verifica(requisicao.body.token)
+      const usuario = await Usuario.buscaPorId(id)
+      await usuario.adicionaSenha(requisicao.body.senha)
+      await usuario.atualizarSenha()
+      resposta.send({ mensagem: 'Sua senha foi atualizada com sucesso' })
+    } catch (erro) {
+      proximo(erro)
+    }
   }
 }
