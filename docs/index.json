@@ -1,0 +1,3822 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/controleDeAcesso.js",
+    "content": "const AccessControl = require('accesscontrol')\nconst controle = new AccessControl()\n\ncontrole\n    .grant('assinante')\n    .readAny('post', ['id', 'titulo', 'conteudo', 'autor'])\n    .readAny('usuario', ['nome'])\n\ncontrole\n    .grant('editor')\n    .extend('assinante')\n    .createOwn('post')\n    .deleteOwn('post')\n\ncontrole\n    .grant('admin')\n    .readAny('post')\n    .createAny('post')\n    .deleteAny('post')\n    .readAny('usuario')\n    .deleteAny('usuario')\n\nmodule.exports = controle",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/controleDeAcesso.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "AccessControl",
+    "memberof": "src/controleDeAcesso.js",
+    "static": true,
+    "longname": "src/controleDeAcesso.js~AccessControl",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/controleDeAcesso.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "controle",
+    "memberof": "src/controleDeAcesso.js",
+    "static": true,
+    "longname": "src/controleDeAcesso.js~controle",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/controleDeAcesso.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "src/conversores.js",
+    "content": "class Conversor {\n    converter (dados) {\n        if (this.camposPublicos.indexOf('*') === -1) {\n            dados = this.filtrar(dados)\n        }\n\n        if (this.tipoDeConteudo === 'json') {\n            return this.json(dados)\n        }\n    }\n\n    json (dados) {\n        return JSON.stringify(dados)\n    }\n\n    filtrar (dados) {\n        if (Array.isArray(dados)) {\n            dados = dados.map((post) => this.filtrarObjeto(post))\n        } else {\n            dados = this.filtrarObjeto(dados)\n        }\n\n        return dados\n    }\n\n    filtrarObjeto (objeto) {\n        const objetoFiltrado = {}\n\n        this.camposPublicos.forEach((campo) => {\n            if (Reflect.has(objeto, campo)) {\n                objetoFiltrado[campo] = objeto[campo]\n            }\n        })\n\n        return objetoFiltrado\n    }\n}\n\nclass ConversorPost extends Conversor {\n    constructor (tipoDeConteudo, camposExtras = []) {\n        super()\n        this.tipoDeConteudo = tipoDeConteudo\n        this.camposPublicos = ['titulo', 'conteudo'].concat(camposExtras)\n    }\n}\n\nclass ConversorUsuario extends Conversor {\n    constructor (tipoDeConteudo, camposExtras = []) {\n        super()\n        this.tipoDeConteudo = tipoDeConteudo\n        this.camposPublicos = ['nome'].concat(camposExtras)\n    }\n}\n\nmodule.exports = { ConversorPost, ConversorUsuario }",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/conversores.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "class",
+    "name": "Conversor",
+    "memberof": "src/conversores.js",
+    "static": true,
+    "longname": "src/conversores.js~Conversor",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/conversores.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "method",
+    "name": "converter",
+    "memberof": "src/conversores.js~Conversor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/conversores.js~Conversor#converter",
+    "access": "public",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dados",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "method",
+    "name": "json",
+    "memberof": "src/conversores.js~Conversor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/conversores.js~Conversor#json",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dados",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "filtrar",
+    "memberof": "src/conversores.js~Conversor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/conversores.js~Conversor#filtrar",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "params": [
+      {
+        "name": "dados",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "filtrarObjeto",
+    "memberof": "src/conversores.js~Conversor",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/conversores.js~Conversor#filtrarObjeto",
+    "access": "public",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "params": [
+      {
+        "name": "objeto",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "class",
+    "name": "ConversorPost",
+    "memberof": "src/conversores.js",
+    "static": true,
+    "longname": "src/conversores.js~ConversorPost",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/conversores.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Conversor"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/conversores.js~ConversorPost",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/conversores.js~ConversorPost#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "member",
+    "name": "tipoDeConteudo",
+    "memberof": "src/conversores.js~ConversorPost",
+    "static": false,
+    "longname": "src/conversores.js~ConversorPost#tipoDeConteudo",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "member",
+    "name": "camposPublicos",
+    "memberof": "src/conversores.js~ConversorPost",
+    "static": false,
+    "longname": "src/conversores.js~ConversorPost#camposPublicos",
+    "access": "public",
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "class",
+    "name": "ConversorUsuario",
+    "memberof": "src/conversores.js",
+    "static": true,
+    "longname": "src/conversores.js~ConversorUsuario",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/conversores.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 47,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Conversor"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/conversores.js~ConversorUsuario",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/conversores.js~ConversorUsuario#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "member",
+    "name": "tipoDeConteudo",
+    "memberof": "src/conversores.js~ConversorUsuario",
+    "static": false,
+    "longname": "src/conversores.js~ConversorUsuario#tipoDeConteudo",
+    "access": "public",
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "member",
+    "name": "camposPublicos",
+    "memberof": "src/conversores.js~ConversorUsuario",
+    "static": false,
+    "longname": "src/conversores.js~ConversorUsuario#camposPublicos",
+    "access": "public",
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/erros.js",
+    "content": "class InvalidArgumentError extends Error {\n  constructor (mensagem) {\n    super(mensagem)\n    this.name = 'InvalidArgumentError'\n  }\n}\n\nclass InternalServerError extends Error {\n  constructor (mensagem) {\n    super(mensagem)\n    this.name = 'InternalServerError'\n  }\n}\n\nclass NaoEncontrado extends Error {\n  constructor (entidade) {\n    const mensagem = `Não foi possível encontrar ${entidade}`\n    super(mensagem)\n    this.name = 'NaoEncontrado'\n  }\n}\n\nclass NaoAutorizado extends Error {\n  constructor () {\n    const mensagem = 'Não foi possível acessar esse recurso'\n    super(mensagem)\n    this.name = 'NaoAutorizado'\n  }\n}\n\nmodule.exports = { InvalidArgumentError, InternalServerError, NaoEncontrado, NaoAutorizado }\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/erros.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "class",
+    "name": "InvalidArgumentError",
+    "memberof": "src/erros.js",
+    "static": true,
+    "longname": "src/erros.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/erros.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/erros.js~InvalidArgumentError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/erros.js~InvalidArgumentError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/erros.js~InvalidArgumentError",
+    "static": false,
+    "longname": "src/erros.js~InvalidArgumentError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "class",
+    "name": "InternalServerError",
+    "memberof": "src/erros.js",
+    "static": true,
+    "longname": "src/erros.js~InternalServerError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/erros.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/erros.js~InternalServerError",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/erros.js~InternalServerError#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/erros.js~InternalServerError",
+    "static": false,
+    "longname": "src/erros.js~InternalServerError#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "class",
+    "name": "NaoEncontrado",
+    "memberof": "src/erros.js",
+    "static": true,
+    "longname": "src/erros.js~NaoEncontrado",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/erros.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/erros.js~NaoEncontrado",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/erros.js~NaoEncontrado#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/erros.js~NaoEncontrado",
+    "static": false,
+    "longname": "src/erros.js~NaoEncontrado#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "class",
+    "name": "NaoAutorizado",
+    "memberof": "src/erros.js",
+    "static": true,
+    "longname": "src/erros.js~NaoAutorizado",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/erros.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/erros.js~NaoAutorizado",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/erros.js~NaoAutorizado#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/erros.js~NaoAutorizado",
+    "static": false,
+    "longname": "src/erros.js~NaoAutorizado#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/middlewares/autorizacao.js",
+    "content": "const controle = require('../controleDeAcesso')\n\nconst metodos = {\n    ler: {\n        todos: 'readAny',\n        apenasSeu: 'readOwn'\n    },\n    criar: {\n        todos: 'createAny',\n        apenasSeu: 'createOwn'\n    },\n    remover: {\n        todos: 'deleteAny',\n        apenasSeu: 'deleteOwn'\n    }\n}\nmodule.exports = (entidade, acao) => (requisicao, resposta, proximo) => {\n    const permissoesDoCargo = controle.can(requisicao.user.cargo)\n    const acoes = metodos[acao]\n    const permissaoTodos = permissoesDoCargo[acoes.todos](entidade)\n    const permissaoApenasSeu = permissoesDoCargo[acoes.apenasSeu](entidade)\n    \n    if (permissaoTodos.granted === false && permissaoApenasSeu.granted === false) {\n        resposta.status(403)\n        resposta.end()\n        return\n    }\n\n    requisicao.acesso = {\n        todos: {\n            permitido: permissaoTodos.granted,\n            atributos: permissaoTodos.attributes\n        },\n        apenasSeu: {\n            permitido: permissaoApenasSeu.granted,\n            atributos: permissaoApenasSeu.attributes\n        }\n    }\n\n    proximo()\n}",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/middlewares/autorizacao.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "controle",
+    "memberof": "src/middlewares/autorizacao.js",
+    "static": true,
+    "longname": "src/middlewares/autorizacao.js~controle",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/middlewares/autorizacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "variable",
+    "name": "metodos",
+    "memberof": "src/middlewares/autorizacao.js",
+    "static": true,
+    "longname": "src/middlewares/autorizacao.js~metodos",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/middlewares/autorizacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"ler\": *, \"criar\": *, \"remover\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "file",
+    "name": "src/middlewares/tentarAutenticar.js",
+    "content": "const { middlewaresAutenticacao } = require('../usuarios')\nmodule.exports = (requisicao, resposta, proximo) => {\n    requisicao.estaAutenticado = false\n\n    if (requisicao.get('Authorization')) {\n        return middlewaresAutenticacao.bearer(requisicao, resposta, proximo)\n    }\n\n    proximo()\n}",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/middlewares/tentarAutenticar.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 82,
+    "kind": "variable",
+    "name": "middlewaresAutenticacao",
+    "memberof": "src/middlewares/tentarAutenticar.js",
+    "static": true,
+    "longname": "src/middlewares/tentarAutenticar.js~middlewaresAutenticacao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/middlewares/tentarAutenticar.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "src/middlewares/tentarAutorizar.js",
+    "content": "const autorizacao = require('./autorizacao')\n\nmodule.exports = (entidade, acao) => (requisicao, resposta, proximo) => {\n    if (requisicao.estaAutenticado === true) {\n        return autorizacao(entidade, acao)(requisicao, resposta, proximo)\n    }\n\n    proximo()\n}",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/middlewares/tentarAutorizar.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "variable",
+    "name": "autorizacao",
+    "memberof": "src/middlewares/tentarAutorizar.js",
+    "static": true,
+    "longname": "src/middlewares/tentarAutorizar.js~autorizacao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/middlewares/tentarAutorizar.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "file",
+    "name": "src/posts/index.js",
+    "content": "module.exports = {\n  modelo: require('./posts-modelo'),\n  rotas: require('./posts-rotas'),\n  controlador: require('./posts-controlador')\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/posts/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 86,
+    "kind": "file",
+    "name": "src/posts/posts-controlador.js",
+    "content": "const Post = require('./posts-modelo')\nconst { InvalidArgumentError } = require('../erros')\nconst { ConversorPost } = require('../conversores')\n\nmodule.exports = {\n  async adiciona (req, res) {\n    try {\n      req.body.autor = req.user.id\n      const post = new Post(req.body)\n      await post.adiciona()\n\n      res.status(201).json(post)\n    } catch (erro) {\n      if (erro instanceof InvalidArgumentError) {\n        return res.status(400).json({ erro: erro.message })\n      }\n      res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async lista (req, res) {\n    try {\n      let posts = await Post.listarTodos()\n      const conversor = new ConversorPost('json', req.acesso.todos.permitido ? req.acesso.todos.atributos : req.acesso.apenasSeu.atributos)\n\n      if (!req.estaAutenticado) {\n        posts = posts.map(post => {\n          post.conteudo = post.conteudo.substr(0, 10) + '... Você precisa assinar o blog para ler o restante do post'\n          return post\n        })\n      }\n\n      res.send(conversor.converter(posts))\n    } catch (erro) {\n      return res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async obterDetalhes (req, res) {\n    try {\n      const post = await Post.buscaPorId(req.params.id, req.user.id)\n      res.json(post)\n    } catch (erro) {\n      return res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async remover (req, res) {\n    try {\n      let post\n      if (req.acesso.todos.permitido === true) {\n        post = await Post.buscaPorId(req.params.id)\n      } else if (req.acesso.apenasSeu.permitido === true) {\n        post = await Post.buscaPorIdAutor(req.params.id, req.user.id)\n      }\n      \n      post.remover()\n      res.status(204)\n      res.end()\n    } catch (erro) {\n      return res.status(500).json({ erro: erro.message })\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/posts/posts-controlador.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "Post",
+    "memberof": "src/posts/posts-controlador.js",
+    "static": true,
+    "longname": "src/posts/posts-controlador.js~Post",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-controlador.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/posts/posts-controlador.js",
+    "static": true,
+    "longname": "src/posts/posts-controlador.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-controlador.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "variable",
+    "name": "ConversorPost",
+    "memberof": "src/posts/posts-controlador.js",
+    "static": true,
+    "longname": "src/posts/posts-controlador.js~ConversorPost",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-controlador.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "file",
+    "name": "src/posts/posts-dao.js",
+    "content": "const db = require('../../database')\nconst { InternalServerError } = require('../erros')\n\nconst { promisify } = require('util')\nconst dbRun = promisify(db.run).bind(db)\nconst dbGet = promisify(db.get).bind(db)\nconst dbAll = promisify(db.all).bind(db)\n\nmodule.exports = {\n  async adiciona (post) {\n    try {\n      await dbRun('INSERT INTO posts (titulo, conteudo, autor) VALUES (?, ?, ?)', [\n        post.titulo,\n        post.conteudo,\n        post.autor\n      ])\n    } catch (erro) {\n      throw new InternalServerError('Erro ao adicionar o post!')\n    }\n  },\n\n  async listarPorAutor (idAutor) {\n    try {\n      return await dbAll('SELECT id, titulo FROM posts WHERE autor = ?', [idAutor])\n    } catch (erro) {\n      throw new InternalServerError('Erro ao listar os posts!')\n    }\n  },\n\n  async listarTodos () {\n    try {\n      return await dbAll('SELECT id, titulo, conteudo, autor FROM posts')\n    } catch (erro) {\n      throw new InternalServerError('Erro ao listar os posts!')\n    }\n  },\n\n  async buscaPorId (id, idAutor) {\n    try {\n      let instrucoes = 'SELECT * FROM posts WHERE id = ?'\n      const parametros = [id]\n\n      idAutor = Number(idAutor)\n      if (isNaN(idAutor) === false) {\n        instrucoes = `${instrucoes} AND autor = ?`\n        parametros.push(idAutor)\n      }\n\n      return await dbGet(instrucoes, parametros)\n    } catch (erro) {\n      throw new InternalServerError('Não foi possível encontrar o post!')\n    }\n  },\n\n  async remover ({ id, autor }) {\n    try {\n      return await dbRun('DELETE FROM posts WHERE id = ? AND autor = ?', [id, autor])\n    } catch (erro) {\n      throw new InternalServerError('Erro ao tentar remover o post!')\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/posts/posts-dao.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 91,
+    "kind": "variable",
+    "name": "db",
+    "memberof": "src/posts/posts-dao.js",
+    "static": true,
+    "longname": "src/posts/posts-dao.js~db",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "variable",
+    "name": "InternalServerError",
+    "memberof": "src/posts/posts-dao.js",
+    "static": true,
+    "longname": "src/posts/posts-dao.js~InternalServerError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "variable",
+    "name": "promisify",
+    "memberof": "src/posts/posts-dao.js",
+    "static": true,
+    "longname": "src/posts/posts-dao.js~promisify",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "variable",
+    "name": "dbRun",
+    "memberof": "src/posts/posts-dao.js",
+    "static": true,
+    "longname": "src/posts/posts-dao.js~dbRun",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "variable",
+    "name": "dbGet",
+    "memberof": "src/posts/posts-dao.js",
+    "static": true,
+    "longname": "src/posts/posts-dao.js~dbGet",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 96,
+    "kind": "variable",
+    "name": "dbAll",
+    "memberof": "src/posts/posts-dao.js",
+    "static": true,
+    "longname": "src/posts/posts-dao.js~dbAll",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "file",
+    "name": "src/posts/posts-modelo.js",
+    "content": "const postsDao = require('./posts-dao')\nconst validacoes = require('../validacoes-comuns')\n\nclass Post {\n  constructor (post) {\n    this.id = post.id\n    this.titulo = post.titulo\n    this.conteudo = post.conteudo\n    this.autor = post.autor\n    this.valida()\n  }\n\n  adiciona () {\n    return postsDao.adiciona(this)\n  }\n\n  static async buscaPorId (id) {\n    const post = await postsDao.buscaPorId(id)\n    if (!post) {\n      return null\n    }\n\n    return new Post(post)\n  }\n\n  static async buscaPorIdAutor (id, idAutor) {\n    const post = await postsDao.buscaPorId(id, idAutor)\n\n    if (!post) {\n      return null\n    }\n\n    return new Post(post)\n  }\n\n  valida () {\n    validacoes.campoStringNaoNulo(this.titulo, 'titulo')\n    validacoes.campoTamanhoMinimo(this.titulo, 'titulo', 5)\n\n    validacoes.campoStringNaoNulo(this.conteudo, 'conteudo')\n    validacoes.campoTamanhoMaximo(this.conteudo, 'conteudo', 140)\n  }\n\n  remover () {\n    return postsDao.remover(this)\n  }\n\n  static listarPorAutor (idAutor) {\n    return postsDao.listarPorAutor(idAutor)\n  }\n\n  static listarTodos () {\n    return postsDao.listarTodos()\n  }\n}\n\nmodule.exports = Post\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/posts/posts-modelo.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 98,
+    "kind": "variable",
+    "name": "postsDao",
+    "memberof": "src/posts/posts-modelo.js",
+    "static": true,
+    "longname": "src/posts/posts-modelo.js~postsDao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-modelo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "variable",
+    "name": "validacoes",
+    "memberof": "src/posts/posts-modelo.js",
+    "static": true,
+    "longname": "src/posts/posts-modelo.js~validacoes",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-modelo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 100,
+    "kind": "class",
+    "name": "Post",
+    "memberof": "src/posts/posts-modelo.js",
+    "static": true,
+    "longname": "src/posts/posts-modelo.js~Post",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-modelo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/posts/posts-modelo.js~Post#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "static": false,
+    "longname": "src/posts/posts-modelo.js~Post#id",
+    "access": "public",
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "member",
+    "name": "titulo",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "static": false,
+    "longname": "src/posts/posts-modelo.js~Post#titulo",
+    "access": "public",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 104,
+    "kind": "member",
+    "name": "conteudo",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "static": false,
+    "longname": "src/posts/posts-modelo.js~Post#conteudo",
+    "access": "public",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "member",
+    "name": "autor",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "static": false,
+    "longname": "src/posts/posts-modelo.js~Post#autor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "method",
+    "name": "adiciona",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/posts/posts-modelo.js~Post#adiciona",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "method",
+    "name": "buscaPorId",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/posts/posts-modelo.js~Post.buscaPorId",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "method",
+    "name": "buscaPorIdAutor",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/posts/posts-modelo.js~Post.buscaPorIdAutor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "idAutor",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "method",
+    "name": "valida",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/posts/posts-modelo.js~Post#valida",
+    "access": "public",
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 110,
+    "kind": "method",
+    "name": "remover",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/posts/posts-modelo.js~Post#remover",
+    "access": "public",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 111,
+    "kind": "method",
+    "name": "listarPorAutor",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/posts/posts-modelo.js~Post.listarPorAutor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "params": [
+      {
+        "name": "idAutor",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "method",
+    "name": "listarTodos",
+    "memberof": "src/posts/posts-modelo.js~Post",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/posts/posts-modelo.js~Post.listarTodos",
+    "access": "public",
+    "description": null,
+    "lineNumber": 52,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "file",
+    "name": "src/posts/posts-rotas.js",
+    "content": "const postsControlador = require('./posts-controlador')\nconst { middlewaresAutenticacao } = require('../usuarios')\nconst autorizacao = require('../middlewares/autorizacao')\nconst tentarAutenticar = require('../middlewares/tentarAutenticar')\nconst tentarAutorizar = require('../middlewares/tentarAutorizar')\n\nmodule.exports = app => {\n  app\n    .route('/post')\n    .get(\n      [tentarAutenticar, tentarAutorizar('post', 'ler')],\n      postsControlador.lista\n    )\n    .post(\n      [middlewaresAutenticacao.bearer, autorizacao('post', 'criar')],\n      postsControlador.adiciona\n    )\n\n  app.route('/post/:id')\n    .get(\n      [middlewaresAutenticacao.bearer, autorizacao('post', 'ler')],\n      postsControlador.obterDetalhes\n    )\n    .delete(\n      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local, autorizacao('post', 'remover')],\n      postsControlador.remover\n    )\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/posts/posts-rotas.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 114,
+    "kind": "variable",
+    "name": "postsControlador",
+    "memberof": "src/posts/posts-rotas.js",
+    "static": true,
+    "longname": "src/posts/posts-rotas.js~postsControlador",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-rotas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "variable",
+    "name": "middlewaresAutenticacao",
+    "memberof": "src/posts/posts-rotas.js",
+    "static": true,
+    "longname": "src/posts/posts-rotas.js~middlewaresAutenticacao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-rotas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "variable",
+    "name": "autorizacao",
+    "memberof": "src/posts/posts-rotas.js",
+    "static": true,
+    "longname": "src/posts/posts-rotas.js~autorizacao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-rotas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "variable",
+    "name": "tentarAutenticar",
+    "memberof": "src/posts/posts-rotas.js",
+    "static": true,
+    "longname": "src/posts/posts-rotas.js~tentarAutenticar",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-rotas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 118,
+    "kind": "variable",
+    "name": "tentarAutorizar",
+    "memberof": "src/posts/posts-rotas.js",
+    "static": true,
+    "longname": "src/posts/posts-rotas.js~tentarAutorizar",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/posts/posts-rotas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "file",
+    "name": "src/usuarios/emails.js",
+    "content": "const nodemailer = require('nodemailer')\n\nconst configuracaoEmailProducao = {\n  host: process.env.EMAIL_HOST,\n  auth: {\n    user: process.env.EMAIL_USUARIO,\n    pass: process.env.EMAIL_SENHA\n  },\n  secure: true\n}\n\nconst configuracaoEmailTeste = (contaTeste) => ({\n  host: 'smtp.ethereal.email',\n  auth: contaTeste\n})\n\nasync function criaConfiguracaoEmail () {\n  if (process.env.NODE_ENV === 'production') {\n    return configuracaoEmailProducao\n  } else {\n    const contaTeste = await nodemailer.createTestAccount()\n    return configuracaoEmailTeste(contaTeste)\n  }\n}\n\nclass Email {\n  async enviaEmail () {\n    const configuracaoEmail = await criaConfiguracaoEmail()\n    const transportador = nodemailer.createTransport(configuracaoEmail)\n    const info = await transportador.sendMail(this)\n\n    if (process.env.NODE_ENV !== 'production') {\n      console.log('URL: ' + nodemailer.getTestMessageUrl(info))\n    }\n  }\n}\n\nclass EmailVerificacao extends Email {\n  constructor (usuario, endereco) {\n    super()\n    this.from = '\"Blog do Código\" <noreply@blogdocodigo.com.br>'\n    this.to = usuario.email\n    this.subject = 'Verificação de e-mail'\n    this.text = `Olá! Verifique seu e-mail aqui: ${endereco}`\n    this.html = `<h1>Olá!</h1> Verifique seu e-mail aqui: <a href=\"${endereco}\">${endereco}</a>`\n  }\n}\n\nmodule.exports = { EmailVerificacao }\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/usuarios/emails.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 120,
+    "kind": "variable",
+    "name": "nodemailer",
+    "memberof": "src/usuarios/emails.js",
+    "static": true,
+    "longname": "src/usuarios/emails.js~nodemailer",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "variable",
+    "name": "configuracaoEmailProducao",
+    "memberof": "src/usuarios/emails.js",
+    "static": true,
+    "longname": "src/usuarios/emails.js~configuracaoEmailProducao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"host\": *, \"auth\": *, \"secure\": boolean}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "function",
+    "name": "configuracaoEmailTeste",
+    "memberof": "src/usuarios/emails.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/usuarios/emails.js~configuracaoEmailTeste",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [
+      {
+        "name": "contaTeste",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "function",
+    "name": "criaConfiguracaoEmail",
+    "memberof": "src/usuarios/emails.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/usuarios/emails.js~criaConfiguracaoEmail",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "class",
+    "name": "Email",
+    "memberof": "src/usuarios/emails.js",
+    "static": true,
+    "longname": "src/usuarios/emails.js~Email",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "method",
+    "name": "enviaEmail",
+    "memberof": "src/usuarios/emails.js~Email",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/usuarios/emails.js~Email#enviaEmail",
+    "access": "public",
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "class",
+    "name": "EmailVerificacao",
+    "memberof": "src/usuarios/emails.js",
+    "static": true,
+    "longname": "src/usuarios/emails.js~EmailVerificacao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/emails.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Email"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/usuarios/emails.js~EmailVerificacao",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/usuarios/emails.js~EmailVerificacao#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "ignore": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "member",
+    "name": "from",
+    "memberof": "src/usuarios/emails.js~EmailVerificacao",
+    "static": false,
+    "longname": "src/usuarios/emails.js~EmailVerificacao#from",
+    "access": "public",
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 129,
+    "kind": "member",
+    "name": "to",
+    "memberof": "src/usuarios/emails.js~EmailVerificacao",
+    "static": false,
+    "longname": "src/usuarios/emails.js~EmailVerificacao#to",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "member",
+    "name": "subject",
+    "memberof": "src/usuarios/emails.js~EmailVerificacao",
+    "static": false,
+    "longname": "src/usuarios/emails.js~EmailVerificacao#subject",
+    "access": "public",
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "member",
+    "name": "text",
+    "memberof": "src/usuarios/emails.js~EmailVerificacao",
+    "static": false,
+    "longname": "src/usuarios/emails.js~EmailVerificacao#text",
+    "access": "public",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "member",
+    "name": "html",
+    "memberof": "src/usuarios/emails.js~EmailVerificacao",
+    "static": false,
+    "longname": "src/usuarios/emails.js~EmailVerificacao#html",
+    "access": "public",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "file",
+    "name": "src/usuarios/estrategias-autenticacao.js",
+    "content": "const passport = require('passport')\nconst LocalStrategy = require('passport-local').Strategy\nconst BearerStrategy = require('passport-http-bearer').Strategy\n\nconst Usuario = require('./usuarios-modelo')\n\nconst { InvalidArgumentError, NaoAutorizado } = require('../erros')\n\nconst bcrypt = require('bcrypt')\n\nconst tokens = require('./tokens')\n\nfunction verificaUsuario (usuario) {\n  if (!usuario) {\n    throw new NaoAutorizado()\n  }\n}\n\nasync function verificaSenha (senha, senhaHash) {\n  const senhaValida = await bcrypt.compare(senha, senhaHash)\n  if (!senhaValida) {\n    throw new NaoAutorizado()\n  }\n}\n\npassport.use(\n  new LocalStrategy(\n    {\n      usernameField: 'email',\n      passwordField: 'senha',\n      session: false\n    },\n    async (email, senha, done) => {\n      try {\n        const usuario = await Usuario.buscaPorEmail(email)\n        verificaUsuario(usuario)\n        await verificaSenha(senha, usuario.senhaHash)\n\n        done(null, usuario)\n      } catch (erro) {\n        done(erro)\n      }\n    }\n  )\n)\n\npassport.use(\n  new BearerStrategy(async (token, done) => {\n    try {\n      const id = await tokens.access.verifica(token)\n      const usuario = await Usuario.buscaPorId(id)\n      done(null, usuario, { token })\n    } catch (erro) {\n      done(erro)\n    }\n  })\n)\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/usuarios/estrategias-autenticacao.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 134,
+    "kind": "variable",
+    "name": "passport",
+    "memberof": "src/usuarios/estrategias-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/estrategias-autenticacao.js~passport",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/estrategias-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "variable",
+    "name": "LocalStrategy",
+    "memberof": "src/usuarios/estrategias-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/estrategias-autenticacao.js~LocalStrategy",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/estrategias-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "variable",
+    "name": "BearerStrategy",
+    "memberof": "src/usuarios/estrategias-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/estrategias-autenticacao.js~BearerStrategy",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/estrategias-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 137,
+    "kind": "variable",
+    "name": "Usuario",
+    "memberof": "src/usuarios/estrategias-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/estrategias-autenticacao.js~Usuario",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/estrategias-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/usuarios/estrategias-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/estrategias-autenticacao.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/estrategias-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "variable",
+    "name": "bcrypt",
+    "memberof": "src/usuarios/estrategias-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/estrategias-autenticacao.js~bcrypt",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/estrategias-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "variable",
+    "name": "tokens",
+    "memberof": "src/usuarios/estrategias-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/estrategias-autenticacao.js~tokens",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/estrategias-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "function",
+    "name": "verificaUsuario",
+    "memberof": "src/usuarios/estrategias-autenticacao.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/usuarios/estrategias-autenticacao.js~verificaUsuario",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/estrategias-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "usuario",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "function",
+    "name": "verificaSenha",
+    "memberof": "src/usuarios/estrategias-autenticacao.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/usuarios/estrategias-autenticacao.js~verificaSenha",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/estrategias-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "senha",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "senhaHash",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 143,
+    "kind": "file",
+    "name": "src/usuarios/index.js",
+    "content": "module.exports = {\n  rotas: require('./usuarios-rotas'),\n  controlador: require('./usuarios-controlador'),\n  modelo: require('./usuarios-modelo'),\n  estrategiasAutenticacao: require('./estrategias-autenticacao'),\n  middlewaresAutenticacao: require('./middlewares-autenticacao')\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/usuarios/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 144,
+    "kind": "file",
+    "name": "src/usuarios/middlewares-autenticacao.js",
+    "content": "const passport = require('passport')\nconst Usuario = require('./usuarios-modelo')\nconst tokens = require('./tokens')\n\nmodule.exports = {\n  local (req, res, next) {\n    passport.authenticate(\n      'local',\n      { session: false },\n      (erro, usuario, info) => {\n        if (erro) {\n          return next(erro)\n        }\n\n        req.user = usuario\n        req.estaAutenticado = true\n        return next()\n      }\n    )(req, res, next)\n  },\n\n  bearer (req, res, next) {\n    passport.authenticate(\n      'bearer',\n      { session: false },\n      (erro, usuario, info) => {\n        if (erro) {\n          return next(erro)\n        }\n\n        req.token = info.token\n        req.user = usuario\n        req.estaAutenticado = true\n        return next()\n      }\n    )(req, res, next)\n  },\n\n  async refresh (req, res, next) {\n    try {\n      const { refreshToken } = req.body\n      const id = await tokens.refresh.verifica(refreshToken)\n      await tokens.refresh.invalida(refreshToken)\n      req.user = await Usuario.buscaPorId(id)\n      return next()\n    } catch (erro) {\n      if (erro.name === 'InvalidArgumentError') {\n        return res.status(401).json({ erro: erro.message })\n      }\n      return res.status(500).json({ erro: erro.message })\n    }\n  },\n\n  async verificacaoEmail (req, res, next) {\n    try {\n      const { token } = req.params\n      const id = await tokens.verificacaoEmail.verifica(token)\n      const usuario = await Usuario.buscaPorId(id)\n      req.user = usuario\n      next()\n    } catch (erro) {\n      next(erro)\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/usuarios/middlewares-autenticacao.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 145,
+    "kind": "variable",
+    "name": "passport",
+    "memberof": "src/usuarios/middlewares-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/middlewares-autenticacao.js~passport",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/middlewares-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 146,
+    "kind": "variable",
+    "name": "Usuario",
+    "memberof": "src/usuarios/middlewares-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/middlewares-autenticacao.js~Usuario",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/middlewares-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 147,
+    "kind": "variable",
+    "name": "tokens",
+    "memberof": "src/usuarios/middlewares-autenticacao.js",
+    "static": true,
+    "longname": "src/usuarios/middlewares-autenticacao.js~tokens",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/middlewares-autenticacao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "file",
+    "name": "src/usuarios/tokens.js",
+    "content": "const jwt = require('jsonwebtoken')\nconst crypto = require('crypto')\nconst moment = require('moment')\n\nconst { InvalidArgumentError } = require('../erros')\n\nconst allowlistRefreshToken = require('../../redis/allowlist-refresh-token')\nconst blocklistAccessToken = require('../../redis/blocklist-access-token')\n\nfunction criaTokenJWT (id, [tempoQuantidade, tempoUnidade]) {\n  const payload = { id }\n  const token = jwt.sign(payload, process.env.CHAVE_JWT, {\n    expiresIn: tempoQuantidade + tempoUnidade\n  })\n  return token\n}\n\nasync function verificaTokenJWT (token, nome, blocklist) {\n  await verificaTokenNaBlocklist(token, nome, blocklist)\n  const { id } = jwt.verify(token, process.env.CHAVE_JWT)\n  return id\n}\n\nasync function verificaTokenNaBlocklist (token, nome, blocklist) {\n  if (!blocklist) {\n    return\n  }\n\n  const tokenNaBlocklist = await blocklist.contemToken(token)\n  if (tokenNaBlocklist) {\n    throw new jwt.JsonWebTokenError(`${nome} inválido por logout!`)\n  }\n}\n\nfunction invalidaTokenJWT (token, blocklist) {\n  return blocklist.adiciona(token)\n}\n\nasync function criaTokenOpaco (id, [tempoQuantidade, tempoUnidade], allowlist) {\n  const tokenOpaco = crypto.randomBytes(24).toString('hex')\n  const dataExpiracao = moment().add(tempoQuantidade, tempoUnidade).unix()\n  await allowlist.adiciona(tokenOpaco, id, dataExpiracao)\n  return tokenOpaco\n}\n\nasync function verificaTokenOpaco (token, nome, allowlist) {\n  verificaTokenEnviado(token, nome)\n  const id = await allowlist.buscaValor(token)\n  verificaTokenValido(id, nome)\n  return id\n}\n\nasync function invalidaTokenOpaco (token, allowlist) {\n  await allowlist.deleta(token)\n}\n\nfunction verificaTokenValido (id, nome) {\n  if (!id) {\n    throw new InvalidArgumentError(`${nome} inválido!`)\n  }\n}\n\nfunction verificaTokenEnviado (token, nome) {\n  if (!token) {\n    throw new InvalidArgumentError(`${nome} não enviado!`)\n  }\n}\n\nmodule.exports = {\n  access: {\n    nome: 'access token',\n    lista: blocklistAccessToken,\n    expiracao: [15, 'm'],\n    cria (id) {\n      return criaTokenJWT(id, this.expiracao)\n    },\n    verifica (token) {\n      return verificaTokenJWT(token, this.nome, this.lista)\n    },\n    invalida (token) {\n      return invalidaTokenJWT(token, this.lista)\n    }\n  },\n  refresh: {\n    nome: 'refresh token',\n    lista: allowlistRefreshToken,\n    expiracao: [5, 'd'],\n    cria (id) {\n      return criaTokenOpaco(id, this.expiracao, this.lista)\n    },\n    verifica (token) {\n      return verificaTokenOpaco(token, this.nome, this.lista)\n    },\n    invalida (token) {\n      return invalidaTokenOpaco(token, this.lista)\n    }\n  },\n  verificacaoEmail: {\n    nome: 'token de verificação de e-mail',\n    expiracao: [1, 'h'],\n    cria (id) {\n      return criaTokenJWT(id, this.expiracao)\n    },\n    verifica (token) {\n      return verificaTokenJWT(token, this.nome)\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/usuarios/tokens.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 149,
+    "kind": "variable",
+    "name": "jwt",
+    "memberof": "src/usuarios/tokens.js",
+    "static": true,
+    "longname": "src/usuarios/tokens.js~jwt",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "variable",
+    "name": "crypto",
+    "memberof": "src/usuarios/tokens.js",
+    "static": true,
+    "longname": "src/usuarios/tokens.js~crypto",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "variable",
+    "name": "moment",
+    "memberof": "src/usuarios/tokens.js",
+    "static": true,
+    "longname": "src/usuarios/tokens.js~moment",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/usuarios/tokens.js",
+    "static": true,
+    "longname": "src/usuarios/tokens.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 153,
+    "kind": "variable",
+    "name": "allowlistRefreshToken",
+    "memberof": "src/usuarios/tokens.js",
+    "static": true,
+    "longname": "src/usuarios/tokens.js~allowlistRefreshToken",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "variable",
+    "name": "blocklistAccessToken",
+    "memberof": "src/usuarios/tokens.js",
+    "static": true,
+    "longname": "src/usuarios/tokens.js~blocklistAccessToken",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 155,
+    "kind": "function",
+    "name": "criaTokenJWT",
+    "memberof": "src/usuarios/tokens.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/usuarios/tokens.js~criaTokenJWT",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "arrayPattern1",
+        "types": [
+          "*[]"
+        ],
+        "defaultRaw": [
+          "null",
+          "null"
+        ],
+        "defaultValue": "[null, null]"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 156,
+    "kind": "function",
+    "name": "verificaTokenJWT",
+    "memberof": "src/usuarios/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/usuarios/tokens.js~verificaTokenJWT",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "nome",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "blocklist",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 157,
+    "kind": "function",
+    "name": "verificaTokenNaBlocklist",
+    "memberof": "src/usuarios/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/usuarios/tokens.js~verificaTokenNaBlocklist",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "nome",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "blocklist",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 158,
+    "kind": "function",
+    "name": "invalidaTokenJWT",
+    "memberof": "src/usuarios/tokens.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/usuarios/tokens.js~invalidaTokenJWT",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "blocklist",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 159,
+    "kind": "function",
+    "name": "criaTokenOpaco",
+    "memberof": "src/usuarios/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/usuarios/tokens.js~criaTokenOpaco",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "arrayPattern1",
+        "types": [
+          "*[]"
+        ],
+        "defaultRaw": [
+          "null",
+          "null"
+        ],
+        "defaultValue": "[null, null]"
+      },
+      {
+        "name": "allowlist",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 160,
+    "kind": "function",
+    "name": "verificaTokenOpaco",
+    "memberof": "src/usuarios/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/usuarios/tokens.js~verificaTokenOpaco",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "nome",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "allowlist",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 161,
+    "kind": "function",
+    "name": "invalidaTokenOpaco",
+    "memberof": "src/usuarios/tokens.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/usuarios/tokens.js~invalidaTokenOpaco",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 53,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "allowlist",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 162,
+    "kind": "function",
+    "name": "verificaTokenValido",
+    "memberof": "src/usuarios/tokens.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/usuarios/tokens.js~verificaTokenValido",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "nome",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 163,
+    "kind": "function",
+    "name": "verificaTokenEnviado",
+    "memberof": "src/usuarios/tokens.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/usuarios/tokens.js~verificaTokenEnviado",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/tokens.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 63,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "nome",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 164,
+    "kind": "file",
+    "name": "src/usuarios/usuarios-controlador.js",
+    "content": "const Usuario = require('./usuarios-modelo')\nconst { InvalidArgumentError } = require('../erros')\n\nconst tokens = require('./tokens')\nconst { EmailVerificacao } = require('./emails')\nconst { ConversorUsuario } = require('../conversores')\n\nfunction geraEndereco (rota, token) {\n  const baseURL = process.env.BASE_URL\n  return `${baseURL}${rota}${token}`\n}\n\nmodule.exports = {\n  async adiciona (req, res, proximo) {\n    const { nome, email, senha, cargo } = req.body\n\n    try {\n      const usuario = new Usuario({\n        nome,\n        email,\n        emailVerificado: false,\n        cargo\n      })\n      await usuario.adicionaSenha(senha)\n      await usuario.adiciona()\n\n      const token = tokens.verificacaoEmail.cria(usuario.id)\n      const endereco = geraEndereco('/usuario/verifica_email/', token)\n      const emailVerificacao = new EmailVerificacao(usuario, endereco)\n      emailVerificacao.enviaEmail().catch(console.log)\n\n      res.status(201).json()\n    } catch (erro) {\n      proximo(erro)\n    }\n  },\n\n  async login (req, res, proximo) {\n    try {\n      const accessToken = tokens.access.cria(req.user.id)\n      const refreshToken = await tokens.refresh.cria(req.user.id)\n      res.set('Authorization', accessToken)\n      res.status(200).json({ refreshToken })\n    } catch (erro) {\n      proximo(erro)\n    }\n  },\n\n  async logout (req, res, proximo) {\n    try {\n      const token = req.token\n      await tokens.access.invalida(token)\n      res.status(204).json()\n    } catch (erro) {\n      proximo(erro)\n    }\n  },\n\n  async lista (req, res, proximo) {\n    try {\n      const usuarios = await Usuario.lista()\n      const conversor = new ConversorUsuario(\n        'json',\n        req.acesso.todos.permitido ? req.acesso.todos.atributos : req.acesso.apenasSeu.atributos\n      )\n      res.send(conversor.converter(usuarios))\n    } catch (erro) {\n      proximo(erro)\n    }\n  },\n\n  async verificaEmail (req, res, proximo) {\n    try {\n      const usuario = req.user\n      await usuario.verificaEmail()\n      res.status(200).json()\n    } catch (erro) {\n      proximo(erro)\n    }\n  },\n\n  async deleta (req, res, proximo) {\n    try {\n      const usuario = await Usuario.buscaPorId(req.params.id)\n      await usuario.deleta()\n      res.status(200).json()\n    } catch (erro) {\n      proximo(erro)\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/usuarios/usuarios-controlador.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 165,
+    "kind": "variable",
+    "name": "Usuario",
+    "memberof": "src/usuarios/usuarios-controlador.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-controlador.js~Usuario",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-controlador.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 166,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/usuarios/usuarios-controlador.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-controlador.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-controlador.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 167,
+    "kind": "variable",
+    "name": "tokens",
+    "memberof": "src/usuarios/usuarios-controlador.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-controlador.js~tokens",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-controlador.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 168,
+    "kind": "variable",
+    "name": "EmailVerificacao",
+    "memberof": "src/usuarios/usuarios-controlador.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-controlador.js~EmailVerificacao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-controlador.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 169,
+    "kind": "variable",
+    "name": "ConversorUsuario",
+    "memberof": "src/usuarios/usuarios-controlador.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-controlador.js~ConversorUsuario",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-controlador.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 170,
+    "kind": "function",
+    "name": "geraEndereco",
+    "memberof": "src/usuarios/usuarios-controlador.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/usuarios/usuarios-controlador.js~geraEndereco",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-controlador.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "params": [
+      {
+        "name": "rota",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 171,
+    "kind": "file",
+    "name": "src/usuarios/usuarios-dao.js",
+    "content": "const db = require('../../database')\nconst { InternalServerError } = require('../erros')\n\nconst { promisify } = require('util')\nconst dbRun = promisify(db.run).bind(db)\nconst dbGet = promisify(db.get).bind(db)\nconst dbAll = promisify(db.all).bind(db)\n\nmodule.exports = {\n  async adiciona (usuario) {\n    try {\n      await dbRun(\n        `INSERT INTO usuarios (nome, email, senhaHash, emailVerificado, cargo) \n        VALUES (?, ?, ?, ?, ?)`,\n        [\n          usuario.nome,\n          usuario.email,\n          usuario.senhaHash,\n          usuario.emailVerificado,\n          usuario.cargo\n        ]\n      )\n    } catch (erro) {\n      throw new InternalServerError('Erro ao adicionar o usuário!')\n    }\n  },\n\n  async buscaPorId (id) {\n    try {\n      return await dbGet('SELECT * FROM usuarios WHERE id = ?', [id])\n    } catch (erro) {\n      throw new InternalServerError('Não foi possível encontrar o usuário!')\n    }\n  },\n\n  async buscaPorEmail (email) {\n    try {\n      return await dbGet('SELECT * FROM usuarios WHERE email = ?', [email])\n    } catch (erro) {\n      throw new InternalServerError('Não foi possível encontrar o usuário!')\n    }\n  },\n\n  async lista () {\n    try {\n      return await dbAll('SELECT * FROM usuarios')\n    } catch (erro) {\n      throw new InternalServerError('Erro ao listar usuários!')\n    }\n  },\n\n  async modificaEmailVerificado (usuario, emailVerificado) {\n    try {\n      await dbRun('UPDATE usuarios SET emailVerificado = ? WHERE id = ?', [\n        emailVerificado,\n        usuario.id\n      ])\n    } catch (erro) {\n      throw new InternalServerError('Erro ao modificar a verficação de e-mail!')\n    }\n  },\n\n  async deleta (usuario) {\n    try {\n      await dbRun('DELETE FROM usuarios WHERE id = ?', [usuario.id])\n    } catch (erro) {\n      throw new InternalServerError('Erro ao deletar o usuário')\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/usuarios/usuarios-dao.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 172,
+    "kind": "variable",
+    "name": "db",
+    "memberof": "src/usuarios/usuarios-dao.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-dao.js~db",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 173,
+    "kind": "variable",
+    "name": "InternalServerError",
+    "memberof": "src/usuarios/usuarios-dao.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-dao.js~InternalServerError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 174,
+    "kind": "variable",
+    "name": "promisify",
+    "memberof": "src/usuarios/usuarios-dao.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-dao.js~promisify",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 175,
+    "kind": "variable",
+    "name": "dbRun",
+    "memberof": "src/usuarios/usuarios-dao.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-dao.js~dbRun",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 176,
+    "kind": "variable",
+    "name": "dbGet",
+    "memberof": "src/usuarios/usuarios-dao.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-dao.js~dbGet",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 177,
+    "kind": "variable",
+    "name": "dbAll",
+    "memberof": "src/usuarios/usuarios-dao.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-dao.js~dbAll",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-dao.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "file",
+    "name": "src/usuarios/usuarios-modelo.js",
+    "content": "const usuariosDao = require('./usuarios-dao')\nconst { InvalidArgumentError, NaoEncontrado } = require('../erros')\nconst validacoes = require('../validacoes-comuns')\nconst bcrypt = require('bcrypt')\n\n/**\n * A classe Usuario é responsável por gerenciar todas as operações relacionadas a usuários\n */\nclass Usuario {\n  /**\n   * O construtor recebe os dados de um usuário e os atribui a instância atual\n   * @param {object} usuario \n   */\n  constructor (usuario) {\n    this.id = usuario.id\n    this.nome = usuario.nome\n    this.email = usuario.email\n    this.senhaHash = usuario.senhaHash\n    this.emailVerificado = usuario.emailVerificado\n    this.cargo = usuario.cargo\n    this.valida()\n  }\n\n  /**\n   * @throws {InvalidArgumentError} - Esse erro ocorre quando um usuário com o mesmo e-mail já está cadastrado\n   */\n  async adiciona () {\n    if (await usuariosDao.buscaPorEmail(this.email)) {\n      throw new InvalidArgumentError('O usuário já existe!')\n    }\n\n    await usuariosDao.adiciona(this)\n    const { id } = await usuariosDao.buscaPorEmail(this.email)\n    this.id = id\n  }\n\n  async adicionaSenha (senha) {\n    validacoes.campoStringNaoNulo(senha, 'senha')\n    validacoes.campoTamanhoMinimo(senha, 'senha', 8)\n    validacoes.campoTamanhoMaximo(senha, 'senha', 64)\n\n    this.senhaHash = await Usuario.gerarSenhaHash(senha)\n  }\n\n  valida () {\n    validacoes.campoStringNaoNulo(this.nome, 'nome')\n    validacoes.campoStringNaoNulo(this.email, 'email')\n    const cargosValidos = ['admin', 'editor', 'assinante']\n\n    if (cargosValidos.indexOf(this.cargo) === -1) {\n      throw new InvalidArgumentError('O campo cargo está inválido')\n    }\n  }\n\n  async verificaEmail () {\n    this.emailVerificado = true\n    await usuariosDao.modificaEmailVerificado(this, this.emailVerificado)\n  }\n\n  async deleta () {\n    return usuariosDao.deleta(this)\n  }\n\n  static async buscaPorId (id) {\n    const usuario = await usuariosDao.buscaPorId(id)\n    if (!usuario) {\n      throw new NaoEncontrado('usuário')\n    }\n\n    return new Usuario(usuario)\n  }\n\n  static async buscaPorEmail (email) {\n    const usuario = await usuariosDao.buscaPorEmail(email)\n    if (!usuario) {\n      throw new NaoEncontrado('usuário')\n    }\n\n    return new Usuario(usuario)\n  }\n\n  static lista () {\n    return usuariosDao.lista()\n  }\n\n  static gerarSenhaHash (senha) {\n    const custoHash = 12\n    return bcrypt.hash(senha, custoHash)\n  }\n}\n\nmodule.exports = Usuario\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/usuarios/usuarios-modelo.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 179,
+    "kind": "variable",
+    "name": "usuariosDao",
+    "memberof": "src/usuarios/usuarios-modelo.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-modelo.js~usuariosDao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-modelo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 180,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/usuarios/usuarios-modelo.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-modelo.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-modelo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 181,
+    "kind": "variable",
+    "name": "validacoes",
+    "memberof": "src/usuarios/usuarios-modelo.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-modelo.js~validacoes",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-modelo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 182,
+    "kind": "variable",
+    "name": "bcrypt",
+    "memberof": "src/usuarios/usuarios-modelo.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-modelo.js~bcrypt",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-modelo.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 183,
+    "kind": "class",
+    "name": "Usuario",
+    "memberof": "src/usuarios/usuarios-modelo.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-modelo.js",
+    "importStyle": null,
+    "description": "A classe Usuario é responsável por gerenciar todas as operações relacionadas a usuários",
+    "lineNumber": 9,
+    "interface": false
+  },
+  {
+    "__docId__": 184,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#constructor",
+    "access": "public",
+    "description": "O construtor recebe os dados de um usuário e os atribui a instância atual",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "usuario",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "__docId__": 185,
+    "kind": "member",
+    "name": "id",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#id",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 186,
+    "kind": "member",
+    "name": "nome",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#nome",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 187,
+    "kind": "member",
+    "name": "email",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#email",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 188,
+    "kind": "member",
+    "name": "senhaHash",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#senhaHash",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 189,
+    "kind": "member",
+    "name": "emailVerificado",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#emailVerificado",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 190,
+    "kind": "member",
+    "name": "cargo",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#cargo",
+    "access": "public",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 191,
+    "kind": "method",
+    "name": "adiciona",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#adiciona",
+    "access": "public",
+    "description": "",
+    "lineNumber": 27,
+    "throws": [
+      {
+        "types": [
+          "InvalidArgumentError"
+        ],
+        "description": "Esse erro ocorre quando um usuário com o mesmo e-mail já está cadastrado"
+      }
+    ],
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 193,
+    "kind": "method",
+    "name": "adicionaSenha",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#adicionaSenha",
+    "access": "public",
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "params": [
+      {
+        "name": "senha",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 195,
+    "kind": "method",
+    "name": "valida",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#valida",
+    "access": "public",
+    "description": null,
+    "lineNumber": 45,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 196,
+    "kind": "method",
+    "name": "verificaEmail",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#verificaEmail",
+    "access": "public",
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 198,
+    "kind": "method",
+    "name": "deleta",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario#deleta",
+    "access": "public",
+    "description": null,
+    "lineNumber": 60,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 199,
+    "kind": "method",
+    "name": "buscaPorId",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario.buscaPorId",
+    "access": "public",
+    "description": null,
+    "lineNumber": 64,
+    "undocument": true,
+    "params": [
+      {
+        "name": "id",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 200,
+    "kind": "method",
+    "name": "buscaPorEmail",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario.buscaPorEmail",
+    "access": "public",
+    "description": null,
+    "lineNumber": 73,
+    "undocument": true,
+    "params": [
+      {
+        "name": "email",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 201,
+    "kind": "method",
+    "name": "lista",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario.lista",
+    "access": "public",
+    "description": null,
+    "lineNumber": 82,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 202,
+    "kind": "method",
+    "name": "gerarSenhaHash",
+    "memberof": "src/usuarios/usuarios-modelo.js~Usuario",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/usuarios/usuarios-modelo.js~Usuario.gerarSenhaHash",
+    "access": "public",
+    "description": null,
+    "lineNumber": 86,
+    "undocument": true,
+    "params": [
+      {
+        "name": "senha",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 203,
+    "kind": "file",
+    "name": "src/usuarios/usuarios-rotas.js",
+    "content": "const usuariosControlador = require('./usuarios-controlador')\nconst middlewaresAutenticacao = require('./middlewares-autenticacao')\nconst autorizacao = require('../middlewares/autorizacao')\n\nmodule.exports = app => {\n  app\n    .route('/usuario/atualiza_token')\n    .post(middlewaresAutenticacao.refresh, usuariosControlador.login)\n\n  app\n    .route('/usuario/login')\n    .post(middlewaresAutenticacao.local, usuariosControlador.login)\n\n  app\n    .route('/usuario/logout')\n    .post(\n      [middlewaresAutenticacao.refresh, middlewaresAutenticacao.bearer],\n      usuariosControlador.logout\n    )\n\n  app\n    .route('/usuario/verifica_email/:token')\n    .get(\n      middlewaresAutenticacao.verificacaoEmail,\n      usuariosControlador.verificaEmail\n    )\n\n  app\n    .route('/usuario')\n    .post(usuariosControlador.adiciona)\n    .get(\n      [middlewaresAutenticacao.bearer, autorizacao('usuario', 'ler')],\n      usuariosControlador.lista\n    )\n\n  app\n    .route('/usuario/:id')\n    .delete(\n      [middlewaresAutenticacao.bearer, middlewaresAutenticacao.local, autorizacao('usuario', 'remover')], \n      usuariosControlador.deleta\n    )\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/usuarios/usuarios-rotas.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 204,
+    "kind": "variable",
+    "name": "usuariosControlador",
+    "memberof": "src/usuarios/usuarios-rotas.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-rotas.js~usuariosControlador",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-rotas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 205,
+    "kind": "variable",
+    "name": "middlewaresAutenticacao",
+    "memberof": "src/usuarios/usuarios-rotas.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-rotas.js~middlewaresAutenticacao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-rotas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 206,
+    "kind": "variable",
+    "name": "autorizacao",
+    "memberof": "src/usuarios/usuarios-rotas.js",
+    "static": true,
+    "longname": "src/usuarios/usuarios-rotas.js~autorizacao",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/usuarios/usuarios-rotas.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 207,
+    "kind": "file",
+    "name": "src/validacoes-comuns.js",
+    "content": "const { InvalidArgumentError } = require('./erros')\n\nmodule.exports = {\n  campoStringNaoNulo (valor, nome) {\n    if (typeof valor !== 'string' || valor === 0) { throw new InvalidArgumentError(`É necessário preencher o campo ${nome}!`) }\n  },\n\n  campoTamanhoMinimo (valor, nome, minimo) {\n    if (valor.length < minimo) {\n      throw new InvalidArgumentError(\n        `O campo ${nome} precisa ser maior que ${minimo} caracteres!`\n      )\n    }\n  },\n\n  campoTamanhoMaximo (valor, nome, maximo) {\n    if (valor.length > maximo) {\n      throw new InvalidArgumentError(\n        `O campo ${nome} precisa ser menor que ${maximo} caracteres!`\n      )\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "/home/matheus/code/1994-nodeauth3/src/validacoes-comuns.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 208,
+    "kind": "variable",
+    "name": "InvalidArgumentError",
+    "memberof": "src/validacoes-comuns.js",
+    "static": true,
+    "longname": "src/validacoes-comuns.js~InvalidArgumentError",
+    "access": "public",
+    "export": false,
+    "importPath": "blog-do-codigo/src/validacoes-comuns.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# Blog do código\n> Uma API de blog em Node.js",
+    "longname": "/home/matheus/code/1994-nodeauth3/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"blog-do-codigo\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Um blog simples em Node.js\",\n  \"main\": \"server.js\",\n  \"scripts\": {\n    \"dev\": \"nodemon server.js\",\n    \"lint\": \"eslint ./src/** app.js database.js rotas.js server.js\"\n  },\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"accesscontrol\": \"^2.2.1\",\n    \"bcrypt\": \"^3.0.8\",\n    \"body-parser\": \"^1.19.0\",\n    \"dotenv\": \"^8.2.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"express\": \"^4.17.1\",\n    \"jsonwebtoken\": \"^8.5.1\",\n    \"moment\": \"^2.26.0\",\n    \"nodemailer\": \"^6.4.8\",\n    \"passport\": \"^0.4.1\",\n    \"passport-http-bearer\": \"^1.0.1\",\n    \"passport-local\": \"^1.0.0\",\n    \"redis\": \"^3.0.2\",\n    \"sqlite3\": \"^4.2.0\"\n  },\n  \"devDependencies\": {\n    \"nodemon\": \"^2.0.2\",\n    \"eslint\": \"^7.10.0\",\n    \"eslint-config-standard\": \"^14.1.1\",\n    \"eslint-plugin-import\": \"^2.22.1\",\n    \"eslint-plugin-node\": \"^11.1.0\",\n    \"eslint-plugin-promise\": \"^4.2.1\",\n    \"eslint-plugin-standard\": \"^4.0.1\"\n  }\n}\n",
+    "longname": "/home/matheus/code/1994-nodeauth3/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
