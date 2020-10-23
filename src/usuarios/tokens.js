@@ -6,6 +6,7 @@ const { InvalidArgumentError } = require('../erros')
 
 const allowlistRefreshToken = require('../../redis/allowlist-refresh-token')
 const blocklistAccessToken = require('../../redis/blocklist-access-token')
+const listaRedefinicao = require('../../redis/listaRedefinicaoDeSenha')
 
 function criaTokenJWT (id, [tempoQuantidade, tempoUnidade]) {
   const payload = { id }
@@ -103,6 +104,14 @@ module.exports = {
     },
     verifica (token) {
       return verificaTokenJWT(token, this.nome)
+    }
+  },
+  redefinicaoDeSenha: {
+    nome: 'redefinição de senha',
+    lista: listaRedefinicao,
+    expiracao: [1, 'h'],
+    criarToken (id) {
+      return criaTokenOpaco(id, this.expiracao, this.lista)
     }
   }
 }

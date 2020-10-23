@@ -93,7 +93,8 @@ module.exports = {
     const respostaPadrao = { mensagem: 'Se encontrarmos um usuário com este email, vamos enviar uma mensagem com as instruções para redefinir a senha' }
     try {
       const usuario = await Usuario.buscaPorEmail(requisicao.body.email)
-      const email = new EmailRedefinicaoSenha(usuario)
+      const token = await tokens.redefinicaoDeSenha.criarToken(usuario.id)
+      const email = new EmailRedefinicaoSenha(usuario, token)
       await email.enviaEmail()
 
       resposta.send(respostaPadrao)
